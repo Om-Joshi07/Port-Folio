@@ -1,16 +1,17 @@
 
 
-import NavBar from "./NavBar/NavBar"
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 
 
-const App = () => {
-    return (
-        <>
-            <NavBar/>
-
-        </>   
-    )
+function App() {
+  return (
+    <>
+      <NavBar/>
+      <Footer/>
+      
+    </>
+  );
 }
 
-
-export default App
+export default App;

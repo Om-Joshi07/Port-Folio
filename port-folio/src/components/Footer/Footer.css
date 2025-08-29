@@ -1,0 +1,49 @@
+
+
+footer{
+    padding: 3rem 2rem;
+    background-color: blue;
+
+}
+
+.container{
+    max-width: 132rem;
+    margin: auto;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    & .social-icons{
+        display: flex;
+        gap: 2rem;
+        
+        & a{
+            font-size: 2.3rem;
+            color: white;
+            transition: all .3s ease-in-out ;
+            -webkit-transition: all .3s ease-in-out ;
+            -moz-transition: all .3s ease-in-out ;
+            -ms-transition: all .3s ease-in-out ;
+            -o-transition: all .3s ease-in-out ;
+
+            &:hover{
+                color: #ffb700;
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+            }
+        }
+    } 
+
+    .text{
+        text-align: right;
+        font-size: 1.4rem;
+        color: white;
+    }
+}
+
