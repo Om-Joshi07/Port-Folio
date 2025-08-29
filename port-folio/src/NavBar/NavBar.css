@@ -4,10 +4,97 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 html{
     font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
 }
 
+p, li, a, button{
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+}
+
+
+header{
+    width: 100%;
+    background-color: gray;     
+    padding: 3rem 0;
+}
+
+.container{
+    max-width: 132rem;
+    margin: auto;
+    background-color: red;
+}
+
+.grid{
+    display: grid;
+}
+
+.navbar-grid{
+    grid-template-columns: .5fr 1fr;
+    align-items: center;
+    padding: 0 3.7rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 4rem;
+
+    a{
+        color: black;
+        font-weight: 600;
+        transition: .3s;
+
+        &:hover{
+            text-decoration: underline;
+            color: rgb(208, 0, 255) ;
+        }
+    }
+}
+
+.ham-menu{
+    display: none;
+    /* background-color: yellow; */
+}
+
+.button{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .menu-web{
+        display: none;
+    }
+
+    .ham-menu{
+        display: inline-block;
+        text-align: end;
+        font-size: 2rem;
+        height: auto;
+    }
+
+    .menu-mobile{
+        position: absolute;
+        top: 8rem;
+        right: 0;
+        width: 100%;
+        background-color: gray;
+        padding: 2rem 0;
+
+        & ul{
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+
+    
+}
