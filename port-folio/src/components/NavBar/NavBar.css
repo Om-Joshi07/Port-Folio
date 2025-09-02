@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: #222; */
 }
 
 html {
@@ -22,7 +23,7 @@ p, li, a, button {
 
 header {
     width: 100%;
-    background-color: gray;     
+    background-color: #222;     
     padding: 3rem 0;
 }
 
