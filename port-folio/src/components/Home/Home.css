@@ -19,79 +19,92 @@ main {
   justify-content: center;
   min-height: 100vh;
 
-
-
   & .name-part {
     display: inline-flex;
     align-items: end;
     justify-content: center;
-    gap: .6rem;
     width: 100%;
     /* min-height: 100vh; */
 
-
     & h5 {
-      font-size: 4.9rem;
+      font-size: 4.5rem;
       font-weight: lighter;
     }
 
-      & span {
-        position: relative;
-        display: inline-block;
-        margin-left: 29px;
-        font-size: 11rem;
-        font-weight: bold;
-        letter-spacing: 1rem;
-        text-transform: uppercase;
-        padding-left: .3em;  /* adjust spacing before the first letter */
+    & span {
+      position: relative;
+      display: inline-block;
+      margin-left: 29px;
+      /* background-color: yellowgreen; */
+      font-size: 9rem;
+      font-weight: bold;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      padding-left: 0.3em; /* adjust spacing before the first letter */
 
-
-        /* outlined text */
-        color: transparent;
-        -webkit-text-stroke: 1px #999999;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
-      /* cursor-like overlay (appears only on hover) */
-      & span::before {
-        content: attr(data-text);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        color: orange;
-        -webkit-text-stroke: 0px;
-        border-right: 3px solid orange;
-        /*cursor*/
-        overflow: hidden;
-        transition: width .2s linear;
-        -webkit-transition: width .2s linear;
-        -moz-transition: width .2s linear;
-        -ms-transition: width .2s linear;
-        -o-transition: width .2s linear;
-}
-
-      & span:hover::before {
-        width: 99.9%;
-        text-shadow: 0px 0px 29px orange;
-      }
+      /* outlined text */
+      color: transparent;
+      -webkit-text-stroke: 1px #999999;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
-    & h1 {
-      font-size: 5rem;
+    /* cursor-like overlay (appears only on hover) */
+    & span::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: orange;
+      -webkit-text-stroke: 0px;
+      border-right: 5px solid orange;
+      /*cursor*/
+      overflow: hidden;
+      transition: width 0.2s linear;
+      -webkit-transition: width 0.2s linear;
+      -moz-transition: width 0.2s linear;
+      -ms-transition: width 0.2s linear;
+      -o-transition: width 0.2s linear;
     }
 
-    & p {
-      font-size: 1rem;
-      font-weight: light;
+    & span:hover::before {
+      width: 99%;
+      text-shadow: 0px 0px 28px orange;
     }
   }
 
+  & h1 {
+    font-size: 5rem;
+  }
+
+  & p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: lighter;
+  }
+
+  & .button-part{
+    margin-top: 7rem;
+
+    & button{
+      text-transform: uppercase;
+      background-color: red;
+      padding: 1.3rem;
+      border: none;
+      outline: none;
+
+      & p{
+        font-family: Play;
+      }
+    }
+  }
+}
 
 
-  
+
+
 .about-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

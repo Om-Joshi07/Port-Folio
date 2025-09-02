@@ -13,8 +13,8 @@ const Home = () => {
               <span data-text="&nbsp;Om Joshi">Om Joshi&nbsp;</span>
             </div>
             <p>
-              A Computer Science Student wanting get his hands dirty on couple
-              of things
+              A curious Computer Science Student wanting get his hands dirty on couple
+              of things, keen to be know the things working under the hood.
             </p>
             <div className="button-part">
               <button>
