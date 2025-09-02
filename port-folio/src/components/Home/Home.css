@@ -1,5 +1,3 @@
-
-
 @import url(https://fonts.googleapis.com/css?family=Play:regular);
 @import url(https://fonts.googleapis.com/css?family=Special+Gothic+Expanded+One:regular);
 
@@ -9,6 +7,9 @@
 
 main {
   background-color: #222;
+
+  /*! Maybe later  */
+  cursor: url("./assets/your-cursor.png") 10 10, auto;
   color: white;
 }
 
@@ -27,7 +28,7 @@ main {
     /* min-height: 100vh; */
 
     & h5 {
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       font-weight: lighter;
     }
 
@@ -71,7 +72,7 @@ main {
 
     & span:hover::before {
       width: 99%;
-      text-shadow: 0px 0px 28px orange;
+      text-shadow: 0px 0px 17px orange;
     }
   }
 
@@ -80,30 +81,46 @@ main {
   }
 
   & p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.4rem;
+    font-family: Play;
+    font-size: 1.7rem;
     font-weight: lighter;
+    margin-top: 3rem;
   }
 
-  & .button-part{
+  & .button-part {
     margin-top: 7rem;
 
-    & button{
+    & button {
+      box-shadow: 0 0 17px orangered;
       text-transform: uppercase;
-      background-color: red;
-      padding: 1.3rem;
+      background-color: orangered;
+      cursor: pointer;
+      padding: 1.3rem 1.9rem;
       border: none;
       outline: none;
+      border-radius: 11px;
+      -webkit-border-radius: 11px;
+      -moz-border-radius: 11px;
+      -ms-border-radius: 11px;
+      -o-border-radius: 11px;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
 
-      & p{
+      &:hover {
+        box-shadow: 0 0 48px orangered;
+      }
+
+      & h5 {
         font-family: Play;
+        font-size: 1.9rem;
+        font-weight: lighter;
       }
     }
   }
 }
-
-
-
 
 .about-section {
   display: grid;
@@ -113,7 +130,7 @@ main {
     width: 45rem;
     aspect-ratio: 1;
     overflow: hidden;
-    background-color: red;
+    background-color: orangered;
     border-radius: 50%;
 
     img {
@@ -134,6 +151,7 @@ main {
     & h1 {
       font-size: 7rem;
       margin-bottom: 20px;
+      font-family:'Times New Roman', Times, serif;
     }
 
     & p {
@@ -150,7 +168,7 @@ main {
     width: 45rem;
     aspect-ratio: 1;
     overflow: hidden;
-    background-color: red;
+    background-color: orangered;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -175,14 +193,32 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
+    
     & h1 {
-      font-size: 7rem;
+      font-family: Play;
+      font-size: 3.7rem;
       margin-bottom: 20px;
+      font-weight: 100;
+
+      span {
+        color: orange;
+        font-weight: bold;
+        font-family: Play;
+      }
+
     }
 
     & p {
-      font-size: 3rem;
+      color: #c5c1bf;
+      font-family: Play;
+      line-height: 3.2rem;
+      font-size: 2.3rem;
+
+      & span{
+        font-family: Play;
+        color: orange;
+      }
     }
   }
 }
