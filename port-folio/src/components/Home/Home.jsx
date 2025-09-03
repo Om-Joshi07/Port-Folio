@@ -16,16 +16,16 @@ const Home = () => {
               A curious Computer Science Student wanting get his hands dirty on
               couple of things.
             </p>
-            <div className="button-part">
-              <button>
-                <h5>Scroll Down</h5>
-              </button>
-            </div>
+            <button className="button">
+              <h5>Scroll Down</h5>
+            </button>
           </div>
+        </section>
 
-          {/* About Section  */}
+        {/* About Section  */}
 
-          <div className="about-section">
+        <div className="about-grid">
+          <section className="about-section">
             <div className="image-section">
               <img src={Image2} alt="Om Joshi" />
             </div>
@@ -37,21 +37,33 @@ const Home = () => {
               <p>
                 I'm currently focused on learning and experimenting with
                 frontend and backend technologies, bringing ideas to life
-                through <span>Python</span>, <span>JavaScript</span>, <span>React</span>, <span>Flutter</span>, their <span> Frameworks </span> and their <span>Projects</span>. I enjoy
-                creating engaging user experiences with animations, custom
+                through <span>Python</span>, <span>JavaScript</span>,{" "}
+                <span>React</span>, <span>Flutter</span>, their{" "}
+                <span> Frameworks </span> and their <span>Projects</span>. I
+                enjoy creating engaging user experiences with animations, custom
                 cursors, and dynamic effects.
               </p>
-
-              <br/> <br />
+              <br /> <br />
               <p>
-                Beyond coding, I like exploring <span>Machine Learning Models</span>,
-                understanding how systems work under the hood, experimenting
-                with AI-generated art, and discovering innovative ways to
-                combine creativity with programming.
+                Beyond coding, I like exploring{" "}
+                <span>Machine Learning models</span>, understanding how systems
+                work under the hood, experimenting with AI-generated art, and
+                discovering innovative ways to combine creativity with
+                programming.
               </p>
             </div>
+          </section>
+        </div>
+
+
+        {/* Skill Section  */}
+        <div className="skills-grid">
+          <div className="skills-section">
+
           </div>
-        </section>
+        </div>
+
+
       </div>
     </main>
   );
