@@ -20,6 +20,7 @@ main {
 }
 
 .home-section {
+  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,66 +94,6 @@ main {
     margin-top: 3rem;
   }
 
-/* & .button {
-  border: none;
-  outline: none;
-  padding: 1.2rem 1.5rem;
-  margin-top: 7rem;
-  background: #142d4a; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  position: relative;
-  border-radius: 10px;
-  z-index: 1; 
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -3px; 
-    border-radius: inherit;
-    background: conic-gradient(
-      from 0deg at center,
-      #00c3ff,
-      #4d0199,
-      #6300c6,
-      #009dcd
-    );
-    z-index: -1; 
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: -3px;
-    border-radius: inherit;
-    background: conic-gradient(
-      from 0deg at center,
-      #00c3ff,
-      #4d0199,
-      #6300c6,
-      #009dcd
-    );
-    filter: blur(10px);
-    z-index: -2;
-  }
-
-  h5 {
-    font-family: Play;
-    font-size: 1.9rem;
-    font-weight: lighter;
-    margin: 0;
-    position: relative;
-    z-index: 2; 
-    color: white;
-  }
-
-  &:hover {
-    box-shadow: 0 0 48px orangered;
-  }
-} */
 
 }
 
@@ -275,6 +216,8 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
+  background-color: yellow;
+  padding: 4rem 1rem;
 
   & .image-section {
     /*! Sus start  */
@@ -337,3 +280,62 @@ main {
     }
   }
 }
+
+
+
+/*! Skills Section  */
+
+.skills-section{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 4rem 1rem;
+
+  & .frontend-skills{
+    display: flex;
+    justify-content: space-between;
+
+    & .frontend-text h1 {
+    letter-spacing: .2rem;
+    color: rgb(178, 176, 176);
+    }
+
+    & .frontend-stacks{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14rem;
+
+      & .stacks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: .1rem;
+
+
+        & span{
+          font-size: 1.3rem;
+          font-family: Play;
+        }
+
+
+
+      }
+    }
+    
+  }
+
+  & .backend-skills{
+    display: flex;
+    justify-content: space-between;
+    
+    & .backend-text h1{
+    letter-spacing: .2rem;
+    color: rgb(178, 176, 176);
+    }
+
+
+  }
+
+}
+
+

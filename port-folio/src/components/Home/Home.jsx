@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Image2 from "../../assets/Image2.jpg";
 
+
 const Home = () => {
   return (
     <main>
@@ -59,6 +60,48 @@ const Home = () => {
         {/* Skill Section  */}
         <div className="skills-grid">
           <div className="skills-section">
+            <div className="frontend-skills">
+              <div className="frontend-text">
+                <h1>FRONTEND</h1>
+              </div>
+
+              <div className="frontend-stacks">
+                <div className="stacks">
+                  <img src="/html.svg" alt="" />
+                  <span>HTML</span>
+                </div>
+                <div className="stacks">
+                  <img src="/css.svg" alt="" />
+                  <span>CSS</span>
+                </div>
+                <div className="stacks">
+                  <img src="/js.svg" alt="" />
+                  <span>JavaScript</span>
+                </div>
+                <div className="stacks">
+                  <img src="react.svg" alt="" />
+                  <span>React</span>
+                </div>
+                <div className="stacks">
+                  <img src="jinja.svg" alt="" />
+                  <span>Jinja</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div className="backend-skills">
+              <div className="backend-text">
+                <h1>BACKEND</h1>
+              </div>
+
+              <div className="backend-stacks">
+                <h1>Aaudai xa</h1>
+
+              </div>
+
+            </div>
+
 
           </div>
         </div>

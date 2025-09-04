@@ -23,8 +23,10 @@ p, li, a, button {
 
 header {
     width: 100%;
-    background-color: #222;     
-    padding: 3rem 0;
+    background-color: #323232;
+    padding: 1.7rem 0;
+    position: fixed;
+    z-index: 1;
 }
 
 .container {
@@ -39,11 +41,12 @@ header {
     padding: 0 3.7rem;
 }
 
-/* Desktop Menu */
 .menu-web {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: fixed; */
+    /* padding: 2.3rem; */
 }
 
 .menu-web ul {
