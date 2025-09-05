@@ -1,3 +1,5 @@
+
+
 @import url(https://fonts.googleapis.com/css?family=Play:regular);
 @import url(https://fonts.googleapis.com/css?family=Special+Gothic+Expanded+One:regular);
 
@@ -5,9 +7,14 @@
   font-family: Special Gothic Expanded One;
 }
 
-html{
+html {
   scroll-behavior: smooth;
+}
 
+.container {
+  max-width: 132rem;
+  margin: auto;
+  background-color: red;
 }
 
 main {
@@ -24,10 +31,9 @@ main {
   initial-value: 0deg at center, red, blue, green, yellow;
 }
 
-.home-grid{
+.home-grid {
   padding-top: 3.9rem;
 }
-
 
 .home-section {
   /* background-color: red; */
@@ -103,10 +109,7 @@ main {
     font-weight: lighter;
     margin-top: 3rem;
   }
-
-
 }
-
 
 .button {
   border: none;
@@ -134,7 +137,13 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: conic-gradient(    from 0deg at center,    red,    yellow,    orange,    orangered  );
+  background: conic-gradient(
+    from 0deg at center,
+    red,
+    yellow,
+    orange,
+    orangered
+  );
   filter: blur(10px);
   z-index: -1;
   transition: all 0.3s ease;
@@ -148,16 +157,12 @@ main {
   -webkit-filter: blur(15px);
 }
 
-.button h5{
+.button h5 {
   font-family: Play;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
-
-
-
-
-.about-grid{
+.about-grid {
   padding-top: 3.9rem;
 }
 
@@ -228,7 +233,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
-  /* background-color: yellow; */
+  background-color: yellow;
   padding: 4rem 1rem;
 
   & .image-section {
@@ -293,142 +298,223 @@ main {
   }
 }
 
-
-
 /*! Skills Section  */
 
-
-.skills-grid{
+.skills-grid {
   padding-top: 3.9rem;
 }
 
-.skills-section{
+.skills-section {
   display: flex;
   flex-direction: column;
   gap: 5rem;
   padding: 4rem 1rem;
   min-height: 100vh;
 
-  & .frontend-skills{
+  & .frontend-skills {
     display: flex;
-    justify-content: space-between;
-
-    & .frontend-text h1 {
-    letter-spacing: .2rem;
-    color: rgb(178, 176, 176);
-    }
-
-    & .frontend-stacks{
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 7rem;
-
-      & .stacks{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: .1rem;
-
-        & img{
-          width: 38px;
-          /* background: rebeccapurple; */
-        }
-
-
-        & span{
-          font-size: 1.5rem;
-          font-family: Play;
-          /* background: red; */
-        }
-
-      }
-    }
-    
-  }
-
-& .backend-skills{
-    display: flex;
-    justify-content: space-between;
-
-    & .backend-text h1 {
-    letter-spacing: .2rem;
-    color: rgb(178, 176, 176);
-    }
-
-    & .backend-stacks{
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 7rem;
-
-      & .stacks{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: .1rem;
-
-        & img{
-          width: 38px;
-          /* background: rebeccapurple; */
-        }
-
-
-        & span{
-          font-size: 1.5rem;
-          font-family: Play;
-          /* background: red; */
-        }
-
-
-
-      }
-    }
-
-  }
-
-
-& .database-skills{
-    display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5rem;
     width: 100%;
 
-    & .database-text h1 {
-    letter-spacing: .2rem;
-    color: rgb(178, 176, 176);
+    & .frontend-text {
+      width: 20%;
+
+      & h1 {
+        letter-spacing: 0.2rem;
+        color: rgb(178, 176, 176);
+      }
     }
 
-    & .database-stacks{
+    & .frontend-stacks {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7rem;
+
+      & .stacks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 0.1rem;
+
+        & img {
+          width: 38px;
+          /* background: rebeccapurple; */
+        }
+
+        & span {
+          font-size: 1.5rem;
+          font-family: Play;
+          /* background: red; */
+        }
+      }
+    }
+  }
+
+  & .backend-skills {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+
+    & .backend-text {
+      width: 20%;
+
+      & h1 {
+        letter-spacing: 0.2rem;
+        color: rgb(178, 176, 176);
+      }
+    }
+
+    & .backend-stacks {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7rem;
+
+      & .stacks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 0.1rem;
+
+        & img {
+          width: 38px;
+          /* background: rebeccapurple; */
+        }
+
+        & span {
+          font-size: 1.5rem;
+          font-family: Play;
+          /* background: red; */
+        }
+      }
+    }
+  }
+
+  & .database-skills {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+
+    & .database-text {
+      width: 20%;
+
+      & h1 {
+        letter-spacing: 0.2rem;
+        color: rgb(178, 176, 176);
+      }
+    }
+
+    & .database-stacks {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+      gap: 7rem;
+
+      & .stacks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 0.1rem;
+
+        & img {
+          width: 38px;
+          /* background: rebeccapurple; */
+        }
+
+        & span {
+          font-size: 1.5rem;
+          font-family: Play;
+          /* background: red; */
+        }
+      }
+    }
+  }
+
+  & .other-skills {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+
+    & .other-text {
+      width: 20%;
+
+      & h1 {
+        letter-spacing: 0.2rem;
+        color: rgb(178, 176, 176);
+      }
+    }
+    & .other-stacks {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
       gap: 7rem;
       flex-wrap: wrap;
 
-      & .stacks{
+      & .stacks {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        gap: .1rem;
+        gap: 0.1rem;
 
-        & img{
+        & img {
           width: 38px;
           /* background: rebeccapurple; */
         }
 
-
-        & span{
+        & span {
           font-size: 1.5rem;
           font-family: Play;
           /* background: red; */
         }
-
-
-
       }
     }
-
   }
-
-
 }
 
 
+@media screen and (max-width: 1080px) {
+
+  .skills-grid {
+    & .skills-section {
+      & .frontend-skills {
+        & .frontend-stacks{
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      & .backend-skills {
+        & .backend-stacks{
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      & .database-skills {
+        & .database-stacks{
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      & .other-skills {
+        & .other-stacks{
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+
+
+    }
+  }
+
+  .frontend-stacks{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  
+}

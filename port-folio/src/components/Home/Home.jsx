@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import "./Home.css";
 import Image2 from "../../assets/Image2.jpg";
@@ -91,7 +93,6 @@ const Home = () => {
                   <span>Flutter</span>
                 </div>
               </div>
-
             </div>
 
             <div className="backend-skills">
@@ -100,6 +101,11 @@ const Home = () => {
               </div>
 
               <div className="backend-stacks">
+                <div className="stacks">
+                  <img src="/python.svg" alt="" />
+                  <span>Python</span>
+                </div>
+
                 <div className="stacks">
                   <img src="/django.svg" alt="" />
                   <span>Django</span>
@@ -145,44 +151,49 @@ const Home = () => {
                   <span>Sqlite</span>
                 </div>
 
+              </div>
 
+            </div>
 
+            <div className="other-skills">
+              <div className="other-text">
+                <h1>AI/ML</h1>
+              </div>
+
+              <div className="other-stacks">
+                <div className="stacks">
+                  <img src="/numpy.svg" alt="" />
+                  <span>NumPy</span>
+                </div>
+
+                <div className="stacks">
+                  <img src="/pandas.svg" alt="" />
+                  <span>Pandas</span>
+                </div>
+
+                <div className="stacks">
+                  <img src="/seaborn.svg" alt="" />
+                  <span>Seaborn</span>
+                </div>
+
+                <div className="stacks">
+                  <img src="/matplotlib.svg" alt="" />
+                  <span>Matplotlib</span>
+                </div>
 
               </div>
 
             </div>
+
+
+
 
           </div>
         </div>
 
         <div className="projects-grid" id="projects-grid">
           <section className="projects-section">
-            <div className="image-section">
-              <img src={Image2} alt="Om Joshi" />
-            </div>
-            <div className="text-section">
-              <h1>
-                I'm <span>Om Joshi</span>, a Computer Science Student exploring
-                technologies.
-              </h1>
-              <p>
-                I'm currently focused on learning and experimenting with
-                frontend and backend technologies, bringing ideas to life
-                through <span>Python</span>, <span>JavaScript</span>,{" "}
-                <span>React</span>, <span>Flutter</span>, their{" "}
-                <span> Frameworks </span> and their <span>Projects</span>. I
-                enjoy creating engaging user experiences with animations, custom
-                cursors, and dynamic effects.
-              </p>
-              <br /> <br />
-              <p>
-                Beyond coding, I like exploring{" "}
-                <span>Machine Learning models</span>, understanding how systems
-                work under the hood, experimenting with AI-generated art, and
-                discovering innovative ways to combine creativity with
-                programming.
-              </p>
-            </div>
+            
           </section>
         </div>
 
