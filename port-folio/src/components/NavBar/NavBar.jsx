@@ -13,10 +13,10 @@ const NavBar = () => {
         <div className="navbar-grid">
           <nav className={isMenuOpen ? "menu-mobile" : "menu-web"}>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="#home-grid">Home</a></li>
+              <li><a href="#about-grid">About</a></li>
+              <li><a href="#skills-grid">Skills</a></li>
+              <li><a href="#projects-grid">Projects</a></li>
 
             </ul>
           </nav>

@@ -5,6 +5,11 @@
   font-family: Special Gothic Expanded One;
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
+
 main {
   background-color: #222;
 
@@ -19,8 +24,13 @@ main {
   initial-value: 0deg at center, red, blue, green, yellow;
 }
 
+.home-grid{
+  padding-top: 3.9rem;
+}
+
+
 .home-section {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,7 +157,9 @@ main {
 
 
 
-
+.about-grid{
+  padding-top: 3.9rem;
+}
 
 .about-section {
   display: grid;
@@ -216,7 +228,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
-  background-color: yellow;
+  /* background-color: yellow; */
   padding: 4rem 1rem;
 
   & .image-section {
@@ -285,11 +297,17 @@ main {
 
 /*! Skills Section  */
 
+
+.skills-grid{
+  padding-top: 3.9rem;
+}
+
 .skills-section{
   display: flex;
   flex-direction: column;
   gap: 5rem;
   padding: 4rem 1rem;
+  min-height: 100vh;
 
   & .frontend-skills{
     display: flex;
@@ -302,8 +320,8 @@ main {
 
     & .frontend-stacks{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14rem;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7rem;
 
       & .stacks{
         display: grid;
@@ -311,30 +329,105 @@ main {
         align-items: center;
         gap: .1rem;
 
-
-        & span{
-          font-size: 1.3rem;
-          font-family: Play;
+        & img{
+          width: 38px;
+          /* background: rebeccapurple; */
         }
 
 
+        & span{
+          font-size: 1.5rem;
+          font-family: Play;
+          /* background: red; */
+        }
 
       }
     }
     
   }
 
-  & .backend-skills{
+& .backend-skills{
     display: flex;
     justify-content: space-between;
-    
-    & .backend-text h1{
+
+    & .backend-text h1 {
     letter-spacing: .2rem;
     color: rgb(178, 176, 176);
     }
 
+    & .backend-stacks{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7rem;
+
+      & .stacks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: .1rem;
+
+        & img{
+          width: 38px;
+          /* background: rebeccapurple; */
+        }
+
+
+        & span{
+          font-size: 1.5rem;
+          font-family: Play;
+          /* background: red; */
+        }
+
+
+
+      }
+    }
 
   }
+
+
+& .database-skills{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & .database-text h1 {
+    letter-spacing: .2rem;
+    color: rgb(178, 176, 176);
+    }
+
+    & .database-stacks{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+      gap: 7rem;
+      flex-wrap: wrap;
+
+      & .stacks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: .1rem;
+
+        & img{
+          width: 38px;
+          /* background: rebeccapurple; */
+        }
+
+
+        & span{
+          font-size: 1.5rem;
+          font-family: Play;
+          /* background: red; */
+        }
+
+
+
+      }
+    }
+
+  }
+
 
 }
 
