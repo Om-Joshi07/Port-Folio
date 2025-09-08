@@ -378,7 +378,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="name"
-                      placeholder="Enter your Name..."
+                      // placeholder="Enter your Name..."
                     />
                   </div>
 
@@ -387,7 +387,7 @@ const Home = () => {
                     <input
                       type="email"
                       id="email"
-                      placeholder="Enter your Email..."
+                      // placeholder="Enter your Email..."
                     />
                   </div>
 
@@ -396,7 +396,7 @@ const Home = () => {
                     <input
                       type="text"
                       id="subject"
-                      placeholder="Enter your request..."
+                      // placeholder="Enter your request..."
                     />
                   </div>
 

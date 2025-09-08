@@ -230,7 +230,6 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
-  background-color: yellow;
   padding: 4rem 1rem;
 
   & .image-section {
@@ -306,11 +305,9 @@ main {
   flex-direction: column;
   gap: 5rem;
   padding: 4rem 1rem;
-  /* min-height: 100vh; */
 
   & .frontend-skills {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     gap: 5rem;
     width: 100%;
@@ -494,7 +491,6 @@ main {
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      background-color: red;
 
       & h1 {
         font-family: Play;
@@ -605,7 +601,6 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* background-color: red; */
       gap: 3rem;
 
       & h1 {
@@ -622,28 +617,39 @@ main {
 
     .contact-section {
       display: flex;
-      justify-content: space-between;
-      background-color: rebeccapurple;
+      justify-content: space-around;
       width: 100%;
-
+      padding-top: 5rem;
+      
       & .social-medias {
         display: flex;
         flex-direction: column;
+        gap: 2.3rem;
         align-items: center;
-        background-color: rebeccapurple;
-        width: 20%;
+        box-shadow: 0 0 11px orange;
+        padding: 2.7rem;
+        border-radius: 17px;
 
         & a {
           font-size: 4.3rem;
+
+          &:hover{
+            color: orange;
+          }
         }
       }
 
       & .contact-form {
+        width: 49%;
+
         & form {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           flex-direction: column;
           gap: 2rem;
+          box-shadow: 0 0 9px orange;
+          padding: 5rem;
+          border-radius: 17px;
 
           & .form-element:nth-child(3),
           & .form-element:nth-child(4) {
@@ -653,6 +659,7 @@ main {
           & .form-element {
             display: flex;
             flex-direction: column;
+            gap: 0.7rem;
 
             & label {
               font-family: Play;
@@ -660,10 +667,20 @@ main {
             }
 
             & textarea {
-              border: none;
+              border: 0.2rem solid transparent;
               outline: none;
               padding: 0.3rem;
               font-family: Play;
+              border-radius: 7px;
+              -webkit-border-radius: 7px;
+              -moz-border-radius: 7px;
+              -ms-border-radius: 7px;
+              -o-border-radius: 7px;
+
+              &:focus {
+                border: 0.2rem solid orange;
+                box-shadow: 0 0 9px orange;
+              }
             }
 
             & input {
@@ -672,17 +689,24 @@ main {
               height: 3rem;
               font-size: 1.8rem;
               border: none;
+              border: 0.2rem solid transparent;
               outline: none;
               padding: 0.7rem;
+              border-radius: 7px;
 
               &::placeholder {
                 font-size: 1.4rem;
               }
 
               &:focus {
-                border: 0.2rem;
-                box-shadow: 0 0 5px orange;
+                border: 0.2rem solid orange;
+                box-shadow: 0 0 9px orange;
               }
+            }
+
+            &:focus-within > label {
+              color: orange;
+              font-weight: bold;
             }
           }
         }
