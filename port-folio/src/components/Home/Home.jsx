@@ -56,6 +56,7 @@ const Home = () => {
         </div>
 
         {/* Skill Section  */}
+
         <div className="skills-grid" id="skills-grid">
           <div className="skills-section" id="skills-grid">
             <div className="frontend-skills">
@@ -177,6 +178,8 @@ const Home = () => {
           </div>
         </div>
 
+        {/* Project Section  */}
+
         <div className="projects-grid" id="projects-grid">
           <section className="projects-section">
             <div className="projects-text">
@@ -249,11 +252,13 @@ const Home = () => {
                   <div className="project-name">
                     <h3>Beast Esports</h3>
                     <p>
-                      Beast Esport is an eSports platform that lets users watch
-                      live tournaments and scrims. Players can register for
-                      events and participate in competitions directly on the
-                      site. A real-time leaderboard tracks player rankings,
-                      keeping the community engaged and competitive.
+                      Beast Esport is an online eSports platform that brings
+                      players and fans together in one place. Users can watch
+                      live tournaments, scrims, and competitive matches while
+                      players register for events and participate directly on
+                      the site. By combining streaming, competition,
+                      and community interaction, Beast Esport offers a complete
+                      hub for eSports enthusiasts.
                     </p>
                   </div>
                   <div className="project-stacks">
@@ -278,11 +283,13 @@ const Home = () => {
                   <div className="project-name">
                     <h3>KrishiPath</h3>
                     <p>
-                      Beast Esport is an eSports platform that lets users watch
-                      live tournaments and scrims. Players can register for
-                      events and participate in competitions directly on the
-                      site. A real-time leaderboard tracks player rankings,
-                      keeping the community engaged and competitive.
+                      KrishiPath is a responsive agriculture-focused website
+                      that helps farmers with weather updates, soil insights,
+                      and real-time map tracking. It features an AI-powered RAG
+                      chatbot to answer farming queries and provide personalized
+                      guidance. The platform bridges traditional farming with
+                      modern digital solutions for smarter and sustainable
+                      agriculture.
                     </p>
                   </div>
                   <div className="project-stacks">
@@ -309,7 +316,6 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </section>
         </div>

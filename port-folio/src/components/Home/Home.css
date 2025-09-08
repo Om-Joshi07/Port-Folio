@@ -487,6 +487,7 @@ main {
     justify-content: center;
     gap: 4rem;
     min-height: 100vh;
+    padding: 4rem 1rem;
 
     & .projects-text {
       display: flex;
@@ -510,29 +511,26 @@ main {
       padding: 0rem 3rem;
 
       & .project-card {
-        padding: 1.2rem;
+        position: relative;
         gap: 4rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         background-color: #4e4e4e3f;
-        border-radius: 11px;
-        -webkit-border-radius: 11px;
-        -moz-border-radius: 11px;
-        -ms-border-radius: 11px;
-        -o-border-radius: 11px;
+        background-color: rgb(194, 194, 194);
+        border-radius: 17px;
 
         & .project-image {
           aspect-ratio: 16/9;
           overflow: hidden;
+          border-radius: 17px 17px 0px 0px;
 
           & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
-
           }
         }
 
@@ -540,20 +538,23 @@ main {
           display: flex;
           flex-direction: column;
           gap: 3rem;
-          
-          & .project-name{
+          padding: 2.3rem;
+
+          & .project-name {
             display: flex;
             flex-direction: column;
             gap: 1.3rem;
 
-            & h3{
+            & h3 {
               font-size: 2.3rem;
               font-family: Play;
+              color: black;
             }
 
-            & p{
+            & p {
               font-family: Play;
               font-size: 1.3rem;
+              color: black;
             }
           }
           & .project-stacks {
@@ -564,16 +565,15 @@ main {
               display: flex;
               align-items: center;
               background-color: rgb(224, 224, 224);
-              gap: .6rem;
-              padding: .6rem; 
+              gap: 0.6rem;
+              padding: 0.3rem;
               border-radius: 5px;
 
-
               & img {
-                width: 24px;
+                width: 14px;
               }
 
-              & span{
+              & span {
                 font-family: Play;
                 color: black;
               }
