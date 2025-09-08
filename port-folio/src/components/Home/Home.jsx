@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import Image2 from "../../assets/Image2.jpg";
+import { VscGithubInverted } from "react-icons/vsc";
+import { BsInstagram, BsStackOverflow } from "react-icons/bs";
+import { RxLinkedinLogo } from "react-icons/rx";
 
 const Home = () => {
   return (
@@ -256,9 +259,9 @@ const Home = () => {
                       players and fans together in one place. Users can watch
                       live tournaments, scrims, and competitive matches while
                       players register for events and participate directly on
-                      the site. By combining streaming, competition,
-                      and community interaction, Beast Esport offers a complete
-                      hub for eSports enthusiasts.
+                      the site. By combining streaming, competition, and
+                      community interaction, Beast Esport offers a complete hub
+                      for eSports enthusiasts.
                     </p>
                   </div>
                   <div className="project-stacks">
@@ -315,6 +318,93 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div className="connect-grid" id="connect-grid">
+          <section className="connect-section">
+            <div className="connect-text">
+              <h1>Connect with Me</h1>
+              <p>
+                Connect with me for exciting projects, whether it's building a
+                full-fledged website, developing a cross-platform app, or
+                exploring innovative tech solutions. I'm passionate about
+                learning and experimenting in areas like Web Development, App
+                Development, Cybersecurity, Machine Learning, Deep Learning, and
+                emerging technologies. Let's collaborate, create, and bring
+                ideas to life together that solve the problem and make life
+                convienent!
+              </p>
+            </div>
+
+            <div className="contact-section">
+              <div className="social-medias">
+                <a
+                  href="https://www.linkedin.com/in/om-joshi07/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <RxLinkedinLogo />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <VscGithubInverted />
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsInstagram />
+                </a>
+                <a
+                  href="https://stackoverflow.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsStackOverflow />
+                </a>
+              </div>
+
+              <div className="contact-form">
+                <form action="">
+                  <div className="form-element">
+                    <label htmlFor="">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Enter your Name..."
+                    />
+                  </div>
+
+                  <div className="form-element">
+                    <label htmlFor="">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter your Email..."
+                    />
+                  </div>
+
+                  <div className="form-element">
+                    <label htmlFor="">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      placeholder="Enter your request..."
+                    />
+                  </div>
+
+                  <div className="form-element">
+                    <label htmlFor="">Message</label>
+                    <textarea id="message" rows={7} ></textarea>
+                  </div>
+                </form>
               </div>
             </div>
           </section>
