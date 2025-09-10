@@ -829,6 +829,37 @@ main {
       }
     }
   }
+
+  .connect-grid {
+    & .connect-section {
+      & .contact-section {
+        flex-direction: column;
+        gap: 5.3rem;
+      }
+
+      & .contact-section {
+        .social-medias {
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+      }
+
+      & .contact-section {
+        & .contact-form {
+          width: 100%;
+        }
+        & .contact-form {
+          & form{
+            & .form-element {
+              & input{
+                height: 4.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 701px) {
@@ -852,25 +883,25 @@ main {
       }
 
       & .frontend-skills,
-      & .frontend-text{
+      & .frontend-text {
         display: flex;
         align-items: flex-start;
       }
 
       & .backend-skills,
-      & .backend-text{
+      & .backend-text {
         display: flex;
         align-items: flex-start;
       }
 
       & .database-skills,
-      & .database-text{
+      & .database-text {
         display: flex;
         align-items: flex-start;
       }
 
       & .other-skills,
-      & .other-text{
+      & .other-text {
         display: flex;
         align-items: flex-start;
       }
@@ -878,12 +909,10 @@ main {
   }
 }
 
-
-
 @media screen and (max-width: 581px) {
   html {
     font-size: 23%;
-    border-radius: 11px;  
+    border-radius: 11px;
     -webkit-border-radius: 11px;
     -moz-border-radius: 11px;
     -ms-border-radius: 11px;
@@ -901,31 +930,30 @@ main {
       }
 
       & .frontend-skills,
-      & .frontend-text{
+      & .frontend-text {
         display: flex;
         align-items: flex-start;
       }
 
       & .backend-skills,
-      & .backend-text{
+      & .backend-text {
         display: flex;
         align-items: flex-start;
       }
 
       & .database-skills,
-      & .database-text{
+      & .database-text {
         display: flex;
         align-items: flex-start;
       }
 
       & .other-skills,
-      & .other-text{
+      & .other-text {
         display: flex;
         align-items: flex-start;
       }
     }
   }
-
 
   .projects-grid {
     & .projects-section {
@@ -933,18 +961,15 @@ main {
         grid-template-columns: repeat(1, 1fr);
       }
 
-      & .projects-text{
+      & .projects-text {
         & h1 {
           font-size: 5rem;
-
-        } 
+        }
 
         & p {
           font-size: 3.5rem;
-
         }
       }
-
 
       & .projects-div {
         & .project-card {
@@ -956,24 +981,19 @@ main {
             & .project-stacks {
               gap: 2.3rem;
             }
-
-          }  
+          }
           & .project-text-section {
-              
             & .project-name {
               gap: 3rem;
             }
-             
+
             & .project-name {
-                
               & h3 {
                 font-size: 4.3rem;
-
               }
 
               & p {
                 font-size: 3rem;
-
               }
             }
           }
@@ -983,9 +1003,7 @@ main {
   }
 }
 
-
 @media screen and (max-width: 517px) {
-
   .about-grid {
     & .about-section {
       display: flex;
@@ -996,7 +1014,7 @@ main {
 
   .skills-grid {
     .skills-section {
-      .frontend-skills{
+      .frontend-skills {
         .frontend-stacks {
           grid-template-columns: repeat(4, 1fr);
         }

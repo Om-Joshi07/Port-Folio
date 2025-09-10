@@ -137,7 +137,7 @@ const Home = () => {
                 <div className="stacks">
                   <img src="/postgres.svg" alt="" />
                   <span>PostGres</span>
-                  
+
                 </div>
                 <div className="stacks">
                   <img src="/mongo.svg" alt="" />
@@ -378,7 +378,6 @@ const Home = () => {
                     <input
                       type="text"
                       id="name"
-                      // placeholder="Enter your Name..."
                     />
                   </div>
 
@@ -387,7 +386,6 @@ const Home = () => {
                     <input
                       type="email"
                       id="email"
-                      // placeholder="Enter your Email..."
                     />
                   </div>
 
@@ -396,7 +394,6 @@ const Home = () => {
                     <input
                       type="text"
                       id="subject"
-                      // placeholder="Enter your request..."
                     />
                   </div>
 
