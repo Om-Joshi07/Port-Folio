@@ -135,13 +135,13 @@ const Home = () => {
 
               <div className="database-stacks">
                 <div className="stacks">
-                  <img src="/mongo.svg" alt="" />
-                  <span>MongoDB</span>
-                </div>
-
-                <div className="stacks">
                   <img src="/postgres.svg" alt="" />
                   <span>PostGres</span>
+                  
+                </div>
+                <div className="stacks">
+                  <img src="/mongo.svg" alt="" />
+                  <span>MongoDB</span>
                 </div>
 
                 <div className="stacks">

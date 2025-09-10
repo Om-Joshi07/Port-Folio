@@ -270,7 +270,7 @@ main {
     & .frontend-stacks {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 7rem;
+      gap: 4.5rem 7rem;
 
       & .stacks {
         display: grid;
@@ -280,13 +280,11 @@ main {
 
         & img {
           width: 38px;
-          /* background: rebeccapurple; */
         }
 
         & span {
           font-size: 1.5rem;
           font-family: Play;
-          /* background: red; */
         }
       }
     }
@@ -311,7 +309,7 @@ main {
     & .backend-stacks {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 7rem;
+      gap: 4.5rem 7rem;
 
       & .stacks {
         display: grid;
@@ -353,7 +351,7 @@ main {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-      gap: 7rem;
+      gap: 4.5rem 7rem;
 
       & .stacks {
         display: grid;
@@ -394,8 +392,7 @@ main {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-      gap: 7rem;
-      flex-wrap: wrap;
+      gap: 4.5rem 7rem;
 
       & .stacks {
         display: grid;
@@ -452,6 +449,7 @@ main {
     .projects-div {
       display: grid;
       grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 7rem; /* add spacing between cards */
       padding: 0rem 3rem;
 
@@ -683,7 +681,7 @@ main {
 
 @media screen and (max-width: 1080px) {
   html {
-    font-size: 45%;
+    font-size: 43%;
     border-radius: 11px;
     -webkit-border-radius: 11px;
     -moz-border-radius: 11px;
@@ -693,26 +691,72 @@ main {
 
   .skills-grid {
     & .skills-section {
-
       & .frontend-skills {
-        & .frontend-stacks,
+        & .frontend-stacks {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      & .backend-skills {
+        & .backend-stacks {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      & .database-skills {
+        & .database-stacks {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      & .other-skills {
+        & .other-stacks {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    }
+  }
 
-        & .backend-skills {
-          & .backend-stacks,
+  .skills-grid {
+    & .skills-section {
+      & .frontend-skills {
+        & .frontend-stacks {
+          & .stacks {
+            & img {
+              width: 33px;
+            }
+          }
+        }
+      }
 
-          & .database-skills {
-            & .database-stacks,
+      & .backend-skills {
+        & .backend-stacks {
+          & .stacks {
+            & img {
+              width: 33px;
+            }
+          }
+        }
+      }
 
-            & .other-skills {
-              & .other-stacks {
-                grid-template-columns: repeat(4, 1fr);
-              }
+      & .database-skills {
+        & .database-stacks {
+          & .stacks {
+            & img {
+              width: 33px;
+            }
+          }
+        }
+      }
+
+      & .other-skills {
+        & .other-stacks {
+          & .stacks {
+            & img {
+              width: 33px;
             }
           }
         }
       }
     }
-  }   
+  }
 }
 
 @media screen and (max-width: 928px) {
@@ -728,28 +772,32 @@ main {
   .skills-grid {
     & .skills-section {
       & .frontend-skills {
-        & .frontend-stacks,
-        & .backend-skills {
-          & .backend-stacks,
-          & .database-skills {
-            & .database-stacks,
-            & .other-skills {
-              & .other-stacks {
-                gap: 4rem 7rem;
-              }
-            }
-          }
+        & .frontend-stacks {
+          gap: 4rem 7rem;
+        }
+      }
+      & .backend-skills {
+        & .backend-stacks {
+          gap: 4rem 7rem;
+        }
+      }
+      & .database-skills {
+        & .database-stacks {
+          gap: 4rem 7rem;
+        }
+      }
+      & .other-skills {
+        & .other-stacks {
+          gap: 4rem 7rem;
         }
       }
     }
   }
-
 }
-
 
 @media screen and (max-width: 789px) {
   html {
-    font-size: 40%;
+    font-size: 34%;
     border-radius: 11px;
     -webkit-border-radius: 11px;
     -moz-border-radius: 11px;
@@ -757,50 +805,238 @@ main {
     -o-border-radius: 11px;
   }
 
-
-  .skills-grid{
-    & .skills-section{
-      & .frontend-skills{
-        & .frontend-stacks{
-          grid-template-columns: repeat(4, 1fr);
+  .skills-grid {
+    & .skills-section {
+      & .frontend-skills {
+        & .frontend-stacks {
+          grid-template-columns: repeat(5, 1fr);
         }
       }
-      & .backend-skills{
-        & .backend-stacks{
-          grid-template-columns: repeat(4, 1fr);
+      & .backend-skills {
+        & .backend-stacks {
+          grid-template-columns: repeat(5, 1fr);
         }
       }
-      & .database-skills{
-        & .database-stacks{
-          grid-template-columns: repeat(4, 1fr);
+      & .database-skills {
+        & .database-stacks {
+          grid-template-columns: repeat(5, 1fr);
         }
       }
-      & .other-skills{
-        & .other-stacks{
-          grid-template-columns: repeat(4, 1fr);
+      & .other-skills {
+        & .other-stacks {
+          grid-template-columns: repeat(5, 1fr);
         }
       }
     }
   }
+}
 
-  /* .skills-grid {
+@media screen and (max-width: 701px) {
+  html {
+    font-size: 28%;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+  }
+
+  .skills-grid {
     & .skills-section {
-      & .frontend-skills {
-        & .frontend-stacks,
-        & .backend-skills {
-          & .backend-stacks,
-          & .database-skills {
-            & .database-stacks,
-            & .other-skills {
-              & .other-stacks {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 4rem 7rem;
+      & .frontend-skills,
+      & .backend-skills,
+      & .database-skills,
+      & .other-skills {
+        display: flex;
+        flex-direction: column;
+      }
+
+      & .frontend-skills,
+      & .frontend-text{
+        display: flex;
+        align-items: flex-start;
+      }
+
+      & .backend-skills,
+      & .backend-text{
+        display: flex;
+        align-items: flex-start;
+      }
+
+      & .database-skills,
+      & .database-text{
+        display: flex;
+        align-items: flex-start;
+      }
+
+      & .other-skills,
+      & .other-text{
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 581px) {
+  html {
+    font-size: 23%;
+    border-radius: 11px;  
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+  }
+
+  .skills-grid {
+    & .skills-section {
+      & .frontend-skills,
+      & .backend-skills,
+      & .database-skills,
+      & .other-skills {
+        display: flex;
+        flex-direction: column;
+      }
+
+      & .frontend-skills,
+      & .frontend-text{
+        display: flex;
+        align-items: flex-start;
+      }
+
+      & .backend-skills,
+      & .backend-text{
+        display: flex;
+        align-items: flex-start;
+      }
+
+      & .database-skills,
+      & .database-text{
+        display: flex;
+        align-items: flex-start;
+      }
+
+      & .other-skills,
+      & .other-text{
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+  }
+
+
+  .projects-grid {
+    & .projects-section {
+      & .projects-div {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      & .projects-text{
+        & h1 {
+          font-size: 5rem;
+
+        } 
+
+        & p {
+          font-size: 3.5rem;
+
+        }
+      }
+
+
+      & .projects-div {
+        & .project-card {
+          & .project-text-section {
+            gap: 4.3rem;
+          }
+
+          & .project-text-section {
+            & .project-stacks {
+              gap: 2.3rem;
+            }
+
+          }  
+          & .project-text-section {
+              
+            & .project-name {
+              gap: 3rem;
+            }
+             
+            & .project-name {
+                
+              & h3 {
+                font-size: 4.3rem;
+
+              }
+
+              & p {
+                font-size: 3rem;
+
               }
             }
           }
         }
       }
     }
-  } */
+  }
+}
 
+
+@media screen and (max-width: 517px) {
+
+  .about-grid {
+    & .about-section {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+
+  .skills-grid {
+    .skills-section {
+      .frontend-skills{
+        .frontend-stacks {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+
+    & .skills-section {
+      & .backend-skills {
+        & .backend-stacks {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+
+    & .skills-section {
+      & .database-skills {
+        & .database-stacks {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+
+    & .skills-section {
+      & .other-skills {
+        & .other-stacks {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .home-grid {
+    & .home-section {
+      & .name-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
 }
