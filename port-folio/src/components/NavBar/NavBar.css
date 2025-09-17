@@ -148,7 +148,6 @@ header {
 
   .ham-menu {
     display: flex;
-    background-color: red;
     gap: 1.4rem;
     padding: 1rem;
   }
@@ -179,5 +178,19 @@ header {
 
   .ham-bar.clicked:nth-child(3) {
     transform: rotate(-45deg) translate(4px, -8px);
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .ham-bar.clicked:nth-child(1) {
+    transform: rotate(50deg) translate(1.5px, 7.1px);
+  }
+
+  .ham-bar.clicked:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ham-bar.clicked:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -8px);
   }
 }
