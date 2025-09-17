@@ -75,8 +75,8 @@ header {
 }
 
 .ham-bar {
-    width: 3rem;
-    height: 0.4rem;
+    width: 5rem;
+    height: 0.6rem;
     background-color: white;
     border-radius: 2rem;
     transition: all 0.3s ease-in-out;
@@ -132,7 +132,7 @@ header {
 }
 
 .active-link {
-  color: red;          /* highlight color */
+  color: orange;          /* highlight color */
   font-weight: bold;   /* optional */
 }
 

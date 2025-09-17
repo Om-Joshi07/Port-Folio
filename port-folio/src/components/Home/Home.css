@@ -496,10 +496,7 @@ main {
           bottom: -1px;
           border-radius: 7px;
           background: conic-gradient(
-            orange
-            /* yellow, */
-            /* red, */
-            /* orangered */
+            orange /* yellow, */ /* red, */ /* orangered */
           );
           filter: blur(9px);
           z-index: 0;
@@ -509,7 +506,7 @@ main {
           position: relative;
           z-index: 1;
           background-color: #d7d1d1;
-          border-radius: inherit; 
+          border-radius: inherit;
           overflow: hidden;
           display: flex;
           flex-direction: column;
@@ -615,7 +612,7 @@ main {
 
       & p {
         font-family: Play;
-        width: 70%;
+        width: 60%;
         font-size: 2rem;
       }
     }
@@ -814,6 +811,9 @@ main {
       }
     }
   }
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 1.9rem;
+  }
 }
 
 @media screen and (max-width: 928px) {
@@ -857,7 +857,7 @@ main {
 
   .home-grid {
     & .home-section {
-      min-height: none;
+      min-height: 50vh;
     }
   }
 
@@ -876,13 +876,53 @@ main {
   .projects-grid {
     & .projects-section {
       min-height: auto;
+      gap: 7rem;
     }
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks {
+    padding: .7rem;
+
+    & img {
+      width: 11px;
+    }
+
+    & span {
+      font-size: 1.5rem;
+    }
+  }
+
+  .projects-grid
+    .projects-section
+    .projects-div
+    .card-wrapper
+    .project-card
+    .project-text-section
+    .project-name
+    h3 {
+    font-size: 2.7rem;
+  }
+
+  .projects-grid
+    .projects-section
+    .projects-div
+    .card-wrapper
+    .project-card
+    .project-text-section
+    .project-name
+    p {
+    font-size: 2rem;
   }
 
   .connect-grid {
     & .connect-section {
       min-height: auto;
     }
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 3rem;
+    width: 80%;
   }
 }
 
@@ -958,13 +998,19 @@ main {
 
   .home-grid {
     & .home-section {
-      min-height: none;
+      min-height: 63vh;
     }
   }
 
   .about-grid {
     & .about-section {
       min-height: auto;
+
+      & .text-section {
+        & p {
+          font-size: 2.2rem;
+        }
+      }
     }
   }
 
@@ -977,12 +1023,46 @@ main {
   .projects-grid {
     & .projects-section {
       min-height: auto;
+      & .projects-div {
+        & .card-wrapper {
+          & .project-card {
+            & .project-text-section {
+              & .project-name {
+                & h3 {
+                  font-size: 2.6rem;
+                }
+
+                & p {
+                  font-size: 1.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 
   .connect-grid {
     & .connect-section {
       min-height: auto;
+    }
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 2.7rem;
+    width: 90%;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks {
+    padding: .7rem;
+
+    & img {
+      width: 11px;
+    }
+
+    & span {
+      font-size: 1.5rem;
     }
   }
 }
@@ -1063,7 +1143,7 @@ main {
 
   .home-grid {
     & .home-section {
-      min-height: none;
+      min-height: 55vh;
     }
   }
 }
@@ -1149,16 +1229,6 @@ main {
             & .project-name {
               gap: 3rem;
             }
-
-            & .project-name {
-              & h3 {
-                font-size: 4.3rem;
-              }
-
-              & p {
-                font-size: 3rem;
-              }
-            }
           }
         }
       }
@@ -1167,7 +1237,7 @@ main {
 
   .home-grid {
     & .home-section {
-      min-height: none;
+      min-height: 47vh;
     }
   }
 
@@ -1189,9 +1259,29 @@ main {
     }
   }
 
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name h3 {
+    font-size: 3.7rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 2.7rem;
+  }
+
   .connect-grid {
     & .connect-section {
       min-height: auto;
+    }
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks {
+    padding: .7rem;
+
+    & img {
+      width: 13px;
+    }
+
+    & span {
+      font-size: 1.9rem;
     }
   }
 }
@@ -1206,6 +1296,21 @@ main {
       display: flex;
       flex-flow: column;
       align-items: center;
+
+      & .image-section {
+        height: 100%;
+        aspect-ratio: 1/1;
+      }
+
+      & .text-section {
+        & h1 {
+          font-size: 5rem;
+        }
+        & p {
+          font-size: 3.7rem;
+          line-height: 5rem;
+        }
+      }
     }
   }
 
@@ -1245,7 +1350,7 @@ main {
 
   .home-grid {
     & .home-section {
-      min-height: none;
+      min-height: 30vh;
     }
   }
 
@@ -1264,12 +1369,58 @@ main {
   .projects-grid {
     & .projects-section {
       min-height: auto;
+
+      & .projects-div {
+        gap: 17rem;
+        & .card-wrapper {
+          & .project-card {
+            & .project-text-section {
+              & .project-name {
+                & h3 {
+                  font-size: 4.1rem;
+                }
+                & p {
+                  font-size: 3rem;
+                }
+              }
+
+              & .project-stacks {
+                & .stacks {
+                  padding: 1.5rem;
+
+                  & img {
+                    width: 14px;
+                  }
+
+                  & span {
+                    font-size: 7px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 
   .connect-grid {
     & .connect-section {
       min-height: auto;
+      padding: 0rem;
+
+      & .connect-text {
+        gap: 7.3rem;
+
+        & h1 {
+          font-size: 7rem;
+        }
+
+        & p {
+          font-size: 3.9rem;
+          width: 95%;
+        }
+      }
     }
   }
 }
@@ -1292,7 +1443,7 @@ main {
   .main-container {
     & .home-grid {
       & .home-section {
-        min-height: none;
+        min-height: auto;
       }
     }
   }

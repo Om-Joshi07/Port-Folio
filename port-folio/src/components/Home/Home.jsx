@@ -338,7 +338,7 @@ const Home = () => {
             <section className="connect-section">
               <div className="connect-text">
                 <h1>Connect with Me</h1>
-                <p>
+                <p> 
                   Connect with me for exciting projects, whether it's building a
                   full-fledged website, developing a cross-platform app, or
                   exploring innovative tech solutions. I'm passionate about
@@ -346,7 +346,7 @@ const Home = () => {
                   Development, Cybersecurity, Machine Learning, Deep Learning,
                   and emerging technologies. Let's collaborate, create, and
                   bring ideas to life together that solve the problem and make
-                  life convienent!
+                  life convienent! 
                 </p>
               </div>
 
