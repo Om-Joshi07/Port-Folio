@@ -743,6 +743,13 @@ main {
     -o-border-radius: 11px;
   }
 
+  .about-grid .about-section,
+  .skills-grid .skills-section, 
+  .projects-grid .projects-section
+  {
+    min-height: 75vh;
+  }
+
   .skills-grid {
     & .skills-section {
       & .frontend-skills {
@@ -1117,6 +1124,8 @@ main {
     }
   }
 
+
+
   .about-grid {
     & .about-section {
       min-height: auto;
@@ -1146,6 +1155,20 @@ main {
       min-height: 55vh;
     }
   }
+
+  .frontend-stacks, .backend-stacks, .database-stacks, .other-stacks {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .skills-grid .skills-section .frontend-skills .frontend-stacks,
+  .skills-grid .skills-section .frontend-skills .backend-stacks,
+  .skills-grid .skills-section .frontend-skills .database-stacks,
+  .skills-grid .skills-section .frontend-skills .other-stacks {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+
+
 }
 
 @media screen and (max-width: 581px) {
@@ -1318,7 +1341,7 @@ main {
     .skills-section {
       .frontend-skills {
         .frontend-stacks {
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(5, 1fr);
         }
       }
     }
@@ -1326,7 +1349,7 @@ main {
     & .skills-section {
       & .backend-skills {
         & .backend-stacks {
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(5, 1fr);
         }
       }
     }
@@ -1334,7 +1357,7 @@ main {
     & .skills-section {
       & .database-skills {
         & .database-stacks {
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(5, 1fr);
         }
       }
     }
@@ -1342,7 +1365,7 @@ main {
     & .skills-section {
       & .other-skills {
         & .other-stacks {
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(5, 1fr);
         }
       }
     }
@@ -1426,11 +1449,18 @@ main {
 }
 
 @media screen and (max-width: 358px) {
+
+  html {
+    font-size: 17%;
+  }
+
   .main-container {
-    gap: 3rem;
+    gap: 17rem;
+
   }
 
   .home-grid {
+    padding-top: 25rem;
     & .home-section {
       & .name-part {
         display: flex;
