@@ -26,7 +26,7 @@ header {
     background-color: #323232;
     padding: 1.7rem 0;
     position: fixed;
-    z-index: 11;
+    z-index: 999;
 }
 
 .container {
@@ -66,9 +66,8 @@ header {
     color: orange;
 }
 
-/* Hamburger Menu */
 .ham-menu {
-    display: none; /* hidden on desktop */
+    display: none; 
     flex-direction: column;
     /* justify-content: end; */
     gap: 0.6rem;
@@ -125,11 +124,18 @@ header {
     align-items: center;
     gap: 2rem;
     list-style: none;
+    padding: 2.3rem 0 2.3rem 0;
 }
 
 .menu-mobile ul li a {
     font-size: 2rem;
 }
+
+.active-link {
+  color: red;          /* highlight color */
+  font-weight: bold;   /* optional */
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -145,6 +151,7 @@ header {
     .ham-menu {
         display: flex;
         background-color: red;
+        padding: 1rem;
     }
 }
 

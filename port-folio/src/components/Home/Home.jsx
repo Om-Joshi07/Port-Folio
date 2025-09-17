@@ -196,132 +196,136 @@ const Home = () => {
                 <p>College Projects I built.</p>
               </div>
               <div className="projects-div">
-                <div className="project-card">
-                  <div className="project-image">
-                    <img src="/Hospital_Management_System.jpg" alt="" />
-                  </div>
-
-                  <div className="project-text-section">
-                    <div className="project-name">
-                      <h3>Hospital Management System</h3>
-                      <p>
-                        A Python-based Hospital Management System built using
-                        Object-Oriented Programming (OOP) concepts. This
-                        console-based project allows hospital staff and admins
-                        to perform a variety of operations such as managing
-                        doctors and patients, storing data, generating reports,
-                        and more.
-                      </p>
+                <div className="card-wrapper">
+                  <div className="project-card">
+                    <div className="project-image">
+                      <img src="/Hospital_Management_System.jpg" alt="" />
                     </div>
-                    <div className="project-stacks">
-                      <div className="stacks">
-                        <img src="/python.svg" alt="" />
-                        <span>Python</span>
+                    <div className="project-text-section">
+                      <div className="project-name">
+                        <h3>Hospital Management System</h3>
+                        <p>
+                          A Python-based Hospital Management System built using
+                          Object-Oriented Programming (OOP) concepts. This
+                          console-based project allows hospital staff and admins
+                          to perform a variety of operations such as managing
+                          doctors and patients, storing data, generating
+                          reports, and more.
+                        </p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="project-card">
-                  <div className="project-image">
-                    <img src="/Smart_Heating_Home.jpg" alt="" />
-                  </div>
-
-                  <div className="project-text-section">
-                    <div className="project-name">
-                      <h3>Smart Heating Home</h3>
-                      <p>
-                        An Arduino-based Smart Home Heating System designed in
-                        Tinkercad. It uses sensors like temperature, motion, and
-                        light to monitor and control home conditions
-                        automatically. An RGB LED and LCD display provide
-                        feedback, making the system energy-efficient and
-                        responsive.
-                      </p>
-                    </div>
-                    <div className="project-stacks">
-                      <div className="stacks">
-                        <img src="/tinkercad.svg" alt="" />
-                        <span>TinkerCAD</span>
-                      </div>
-
-                      <div className="stacks">
-                        <img src="/arduino.svg" alt="" />
-                        <span>Arduino</span>
+                      <div className="project-stacks">
+                        <div className="stacks">
+                          <img src="/python.svg" alt="" />
+                          <span>Python</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="project-card">
-                  <div className="project-image">
-                    <img src="/Beast_Esports.png" alt="" />
-                  </div>
-
-                  <div className="project-text-section">
-                    <div className="project-name">
-                      <h3>Beast Esports</h3>
-                      <p>
-                        Beast Esport is an online eSports platform that brings
-                        players and fans together in one place. Users can watch
-                        live tournaments, scrims, and competitive matches while
-                        players register for events and participate directly on
-                        the site. By combining streaming, competition, and
-                        community interaction, Beast Esport offers a complete
-                        hub for eSports enthusiasts.
-                      </p>
+                <div className="card-wrapper">
+                  <div className="project-card">
+                    <div className="project-image">
+                      <img src="/Smart_Heating_Home.jpg" alt="" />
                     </div>
-                    <div className="project-stacks">
-                      <div className="stacks">
-                        <img src="/html.svg" alt="" />
-                        <span>HTML</span>
+                    <div className="project-text-section">
+                      <div className="project-name">
+                        <h3>Smart Heating Home</h3>
+                        <p>
+                          An Arduino-based Smart Home Heating System designed in
+                          Tinkercad. It uses sensors like temperature, motion,
+                          and light to monitor and control home conditions
+                          automatically. An RGB LED and LCD display provide
+                          feedback, making the system energy-efficient and
+                          responsive.
+                        </p>
                       </div>
-                      <div className="stacks">
-                        <img src="/css.svg" alt="" />
-                        <span>CSS</span>
+                      <div className="project-stacks">
+                        <div className="stacks">
+                          <img src="/tinkercad.svg" alt="" />
+                          <span>TinkerCAD</span>
+                        </div>
+                        <div className="stacks">
+                          <img src="/arduino.svg" alt="" />
+                          <span>Arduino</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="project-card">
-                  <div className="project-image">
-                    <img src="/image.png" alt=" " />
-                  </div>
-
-                  <div className="project-text-section">
-                    <div className="project-name">
-                      <h3>KrishiPath</h3>
-                      <p>
-                        KrishiPath is a responsive agriculture-focused website
-                        that helps farmers with weather updates, soil insights,
-                        and real-time map tracking. It features an AI-powered
-                        RAG chatbot to answer farming queries and provide
-                        personalized guidance. The platform bridges traditional
-                        farming with modern digital solutions for smarter and
-                        sustainable agriculture.
-                      </p>
+                <div className="card-wrapper">
+                  <div className="project-card">
+                    <div className="project-image">
+                      <img src="/Beast_Esports.png" alt="" />
                     </div>
-                    <div className="project-stacks">
-                      <div className="stacks">
-                        <img src="/html.svg" alt="" />
-                        <span>HTML</span>
+                    <div className="project-text-section">
+                      <div className="project-name">
+                        <h3>Beast Esports</h3>
+                        <p>
+                          Beast Esport is an online eSports platform that brings
+                          players and fans together in one place. Users can
+                          watch live tournaments, scrims, and competitive
+                          matches while players register for events and
+                          participate directly on the site. By combining
+                          streaming, competition, and community interaction,
+                          Beast Esport offers a complete hub for eSports
+                          enthusiasts.
+                        </p>
                       </div>
-                      <div className="stacks">
-                        <img src="/css.svg" alt="" />
-                        <span>CSS</span>
+                      <div className="project-stacks">
+                        <div className="stacks">
+                          <img src="/html.svg" alt="" />
+                          <span>HTML</span>
+                        </div>
+                        <div className="stacks">
+                          <img src="/css.svg" alt="" />
+                          <span>CSS</span>
+                        </div>
                       </div>
-                      <div className="stacks">
-                        <img src="/js.svg" alt="" />
-                        <span>JaveScript</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card-wrapper">
+                  <div className="project-card">
+                    <div className="project-image">
+                      <img src="/image.png" alt="" />
+                    </div>
+                    <div className="project-text-section">
+                      <div className="project-name">
+                        <h3>KrishiPath</h3>
+                        <p>
+                          KrishiPath is a responsive agriculture-focused website
+                          that helps farmers with weather updates, soil
+                          insights, and real-time map tracking. It features an
+                          AI-powered RAG chatbot to answer farming queries and
+                          provide personalized guidance. The platform bridges
+                          traditional farming with modern digital solutions for
+                          smarter and sustainable agriculture.
+                        </p>
                       </div>
-                      <div className="stacks">
-                        <img src="/jinja.svg" alt="" />
-                        <span>Jinja</span>
-                      </div>
-                      <div className="stacks">
-                        <img src="/langchain.svg" alt="" />
-                        <span>LangChain</span>
+                      <div className="project-stacks">
+                        <div className="stacks">
+                          <img src="/html.svg" alt="" />
+                          <span>HTML</span>
+                        </div>
+                        <div className="stacks">
+                          <img src="/css.svg" alt="" />
+                          <span>CSS</span>
+                        </div>
+                        <div className="stacks">
+                          <img src="/js.svg" alt="" />
+                          <span>JavaScript</span>
+                        </div>
+                        <div className="stacks">
+                          <img src="/jinja.svg" alt="" />
+                          <span>Jinja</span>
+                        </div>
+                        <div className="stacks">
+                          <img src="/langchain.svg" alt="" />
+                          <span>LangChain</span>
+                        </div>
                       </div>
                     </div>
                   </div>
