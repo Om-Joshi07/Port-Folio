@@ -151,7 +151,22 @@ header {
     gap: 1.4rem;
     padding: 1rem;
   }
+
+  .container .navbar-grid .menu-mobile ul li a {
+    font-size: 3.5rem;
+  }
+
+  .container .navbar-grid .menu-mobile ul{
+    gap: 4rem;
+  }
+
+  .container .navbar-grid .menu-mobile {
+    /* font-size: 5rem; */
+    padding: 3.7rem;
+  }
+
 }
+
 
 @media screen and (max-width: 700px) {
   .ham-bar.clicked:nth-child(1) {
