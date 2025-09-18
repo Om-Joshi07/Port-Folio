@@ -1266,7 +1266,7 @@ main {
 
   .home-grid {
     & .home-section {
-      min-height: 47vh;
+      min-height: 57vh;
     }
   }
 
@@ -1379,7 +1379,7 @@ main {
 
   .home-grid {
     & .home-section {
-      min-height: 30vh;
+      min-height: 50vh;
     }
   }
 
@@ -1479,7 +1479,7 @@ main {
   .main-container {
     & .home-grid {
       & .home-section {
-        min-height: auto;
+        min-height: 50vh;
       }
     }
   }
