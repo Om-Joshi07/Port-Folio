@@ -943,6 +943,12 @@ main {
     -o-border-radius: 11px;
   }
 
+  .home-grid .home-section button{
+    display: none;
+  }
+
+
+
   .main-container {
     gap: 11rem;
   }
