@@ -623,27 +623,118 @@ main {
       width: 100%;
       padding-top: 5rem;
 
-      & .social-medias {
+      & .contact-info {
         display: flex;
         flex-direction: column;
-        gap: 2.3rem;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         box-shadow: 0 0 11px orange;
-        padding: 2.7rem;
+        padding: 4rem 3rem;
         border-radius: 17px;
+        width: 40%;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 165, 0, 0.2);
 
-        & a {
-          font-size: 4.3rem;
+        & .contact-quote {
+          border-left: 1px solid orange;
+          padding-left: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          margin-top: 2rem;
 
-          &:hover {
+          & p {
+            font-family: Play;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #d0d0d0;
+            line-height: 1.4;
+            margin: 0;
+          }
+
+          & span {
+            font-family: Play;
+            font-size: 1.2rem;
             color: orange;
+            font-weight: bold;
+          }
+        }
+
+        & .info-details {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+
+          & .info-item {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            & .info-icon {
+              font-size: 3.8rem;
+              color: orange;
+              background: rgba(255, 165, 0, 0.1);
+              padding: 0.8rem;
+              border-radius: 50%;
+              transition: all 0.3s ease;
+            }
+
+            &:hover .info-icon {
+              background: orange;
+              color: #1a1a1a;
+              transform: scale(1.1);
+            }
+
+            & .info-content {
+              display: flex;
+              flex-direction: column;
+              gap: 0.3rem;
+
+              & h3 {
+                font-family: Play;
+                font-size: 1.8rem;
+                color: #e0e0e0;
+                margin: 0;
+              }
+
+              & p, & a {
+                font-family: Play;
+                font-size: 1.5rem;
+                color: #a0a0a0;
+                text-decoration: none;
+                transition: color 0.3s ease;
+              }
+
+              & a:hover {
+                color: orange;
+              }
+            }
+          }
+        }
+
+        & .social-medias-horizontal {
+          display: flex;
+          gap: 2.3rem;
+          justify-content: center;
+          margin-top: 4rem;
+          border-top: 1px solid rgba(255, 165, 0, 0.2);
+          padding-top: 2.5rem;
+
+          & a {
+            font-size: 3rem;
+            color: #a0a0a0;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: orange;
+              transform: translateY(-3px);
+            }
           }
         }
       }
 
       & .contact-form {
-        width: 49%;
+        width: 55%;
 
         & form {
           display: grid;
@@ -710,6 +801,31 @@ main {
             &:focus-within > label {
               color: orange;
               font-weight: bold;
+            }
+          }
+
+          & .send-btn {
+            grid-column: 1 / -1;
+            background: orange;
+            color: #111;
+            border: none;
+            padding: 1.2rem 2rem;
+            font-size: 1.6rem;
+            font-family: Play;
+            font-weight: bold;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 3rem;
+            
+            &:hover {
+              background: #ffb733;
+              box-shadow: 0 0 15px rgba(255, 165, 0, 0.4);
+              transform: translateY(-2px);
+            }
+            
+            &:active {
+              transform: translateY(0);
             }
           }
         }
@@ -983,20 +1099,14 @@ main {
       & .contact-section {
         flex-direction: column;
         gap: 5.3rem;
-      }
 
-      & .contact-section {
-        .social-medias {
-          flex-direction: row;
-          justify-content: space-evenly;
-        }
-      }
-
-      & .contact-section {
-        & .contact-form {
+        & .contact-info {
           width: 100%;
         }
+
         & .contact-form {
+          width: 100%;
+
           & form {
             & .form-element {
               & input {

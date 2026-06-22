@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -9,6 +9,40 @@ const NavBar = () => {
     setActiveLink(id);
     setIsMenuOpen(false); // close menu after click (optional)
   };
+
+  useEffect(() => {
+    const sectionIds = ['home-grid', 'about-grid', 'skills-grid', 'projects-grid', 'connect-grid'];
+    
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveLink(`#${entry.target.id}`);
+        }
+      });
+    };
+
+    // Trigger when 40% of the viewport is intersected by the section
+    const observerOptions = {
+      root: null,
+      rootMargin: '-40% 0px -40% 0px',
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      sectionIds.forEach((id) => {
+        const element = document.getElementById(id);
+        if (element) observer.unobserve(element);
+      });
+    };
+  }, []);
+
 
   return (
     <header>
