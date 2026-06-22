@@ -30,6 +30,10 @@ main {
 
 .home-grid {
   padding-top: 3.9rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-section {
@@ -39,6 +43,7 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  width: 100%;
 
   & .name-part {
     display: inline-flex;
@@ -161,15 +166,19 @@ main {
 
 .about-grid {
   padding-top: 3.9rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* background-color: rgb(0, 69, 92); */
-  min-height: 100vh;
   padding: 4rem 1rem;
   gap: 2rem; /* optional spacing between sections */
+  width: 100%;
 
   & .image-section {
     width: 45rem;
@@ -254,6 +263,10 @@ main {
 
 .skills-grid {
   padding-top: 3.9rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-section {
@@ -262,7 +275,7 @@ main {
   gap: 5rem;
   padding: 4rem 1rem;
   /* background-color: rgb(122, 36, 4); */
-  min-height: 100vh;
+  width: 100%;
 
   & .skills-text {
     display: flex;
@@ -448,6 +461,10 @@ main {
 
 .projects-grid {
   padding-top: 3.9rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   & .projects-section {
     display: flex;
@@ -455,8 +472,8 @@ main {
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    min-height: 100vh;
     padding: 4rem 1rem;
+    width: 100%;
     /* background-color: rgb(128, 128, 9); */
 
     & .projects-text {
@@ -588,7 +605,10 @@ main {
 
 .connect-grid {
   padding-top: 3.9rem;
-  /* min-height: 100vh; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   & .connect-section {
     display: flex;
@@ -598,6 +618,7 @@ main {
     /* min-height: 100vh; */
     padding: 4rem 1rem;
     /* background-color: rgb(66, 107, 6); */
+    width: 100%;
 
     & .connect-text {
       display: flex;

@@ -270,7 +270,7 @@ const Home = () => {
 
                   <div className="contact-quote">
                     <p>"If you think the price of winning is too high, wait until you get the bill from regret."</p>
-                    <span>— Bill Campbell</span>
+                    <span>- Bill Campbell</span>
                   </div>
                   </div>
 
