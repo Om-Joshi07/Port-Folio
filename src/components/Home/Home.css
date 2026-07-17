@@ -1073,1005 +1073,929 @@ main {
 
 @media screen and (max-width: 789px) {
   html {
-    font-size: 36%;
-    border-radius: 11px;
+    font-size: 55%;
   }
 
-  .home-grid .home-section button{
+  .home-grid .home-section button {
     display: none;
-  }
-
-  .home-grid {
-    & .home-section {
-      min-height: auto;
-      padding: 8rem 2rem 4rem;
-    }
   }
 
   .main-container {
     gap: 8rem;
   }
 
-  .about-grid {
-    & .about-section {
-      min-height: auto;
-
-      & .text-section {
-        & p {
-          font-size: 2.6rem;
-          line-height: 3.6rem;
-        }
-      }
-    }
+  .home-grid .home-section {
+    min-height: auto;
+    padding: 6rem 2rem 3rem;
   }
 
-  .skills-grid {
-    & .skills-section {
-      min-height: auto;
-    }
+  .home-grid .home-section .name-part h5 {
+    font-size: 2.8rem;
   }
 
-  .projects-grid {
-    & .projects-section {
-      min-height: auto;
-      & .projects-div {
-        & .card-wrapper {
-          & .project-card {
-            & .project-text-section {
-              & .project-name {
-                & h3 {
-                  font-size: 2.6rem;
-                }
-                & p {
-                  font-size: 2rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part span {
+    font-size: 6rem;
+    letter-spacing: 0.6rem;
   }
 
-  .connect-grid {
-    & .connect-section {
-      min-height: auto;
+  .home-grid .home-section h1 {
+    font-size: 3.5rem;
+  }
 
-      & .contact-section {
-        flex-direction: column;
-        gap: 4rem;
+  .home-grid .home-section p {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
 
-        & .contact-info {
-          width: 100%;
-        }
+  .about-grid .about-section {
+    min-height: auto;
+    gap: 2rem;
+  }
 
-        & .contact-form {
-          width: 100%;
+  .about-grid .about-section .text-section p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 
-          & form {
-            padding: 3rem;
+  .skills-grid .skills-section {
+    min-height: auto;
+  }
 
-            & .form-element {
-              & input {
-                height: 4.3rem;
-              }
-            }
-          }
-        }
-      }
-    }
+  .skills-grid .skills-section .frontend-stacks,
+  .skills-grid .skills-section .backend-stacks,
+  .skills-grid .skills-section .database-stacks,
+  .skills-grid .skills-section .other-stacks {
+    gap: 3rem 5rem;
+  }
+
+  .projects-grid .projects-section {
+    min-height: auto;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name h3 {
+    font-size: 2.4rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks span {
+    font-size: 1.4rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks img {
+    width: 12px;
+  }
+
+  .connect-grid .connect-section {
+    min-height: auto;
+  }
+
+  .connect-grid .connect-section .contact-section {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .connect-grid .connect-section .contact-section .contact-info {
+    width: 100%;
+  }
+
+  .connect-grid .connect-section .contact-section .contact-form {
+    width: 100%;
+  }
+
+  .connect-grid .connect-section .contact-section .contact-form form {
+    padding: 3rem;
+  }
+
+  .connect-grid .connect-section .contact-section .contact-form form .form-element input {
+    height: 3.5rem;
   }
 
   .connect-grid .connect-section .connect-text p {
-    font-size: 2.7rem;
     width: 95%;
-  }
-
-  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks {
-    padding: .7rem;
-
-    & img {
-      width: 13px;
-    }
-
-    & span {
-      font-size: 1.6rem;
-    }
   }
 }
 
 @media screen and (max-width: 701px) {
   html {
-    font-size: 34%;
+    font-size: 50%;
   }
 
   .main-container {
-    gap: 7rem;
+    gap: 6rem;
   }
 
-  .home-grid {
-    & .home-section {
-      min-height: auto;
-      padding: 6rem 2rem 3rem;
-
-      & .name-part {
-        & h5 {
-          font-size: 3rem;
-        }
-        & span {
-          font-size: 7rem;
-          letter-spacing: 0.5rem;
-        }
-      }
-
-      & h1 {
-        font-size: 4rem;
-      }
-
-      & p {
-        font-size: 2.2rem;
-        margin-top: 2rem;
-      }
-    }
+  .home-grid .home-section {
+    min-height: auto;
+    padding: 5rem 1.5rem 3rem;
   }
 
-  .about-grid {
-    & .about-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-
-      & .text-section {
-        & p {
-          font-size: 2.4rem;
-          line-height: 3.4rem;
-        }
-      }
-    }
+  .home-grid .home-section .name-part {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .skills-grid {
-    & .skills-section {
-      min-height: auto;
-      gap: 3rem;
-      padding: 2rem 1rem;
-
-      & .skills-text {
-        & h1 {
-          font-size: 4rem;
-        }
-        & p {
-          font-size: 2.2rem;
-        }
-      }
-
-      & .frontend-skills,
-      & .backend-skills,
-      & .database-skills,
-      & .other-skills {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-
-      & .frontend-text,
-      & .backend-text,
-      & .database-text,
-      & .other-text {
-        width: 100%;
-
-        & h1 {
-          font-size: 2.8rem;
-        }
-      }
-
-      & .frontend-stacks,
-      & .backend-stacks,
-      & .database-stacks,
-      & .other-stacks {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 2rem 3rem;
-        width: 100%;
-
-        & .stacks {
-          & img {
-            width: 30px;
-          }
-          & span {
-            font-size: 1.6rem;
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part h5 {
+    font-size: 2.5rem;
   }
 
-  .projects-grid {
-    & .projects-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 3rem;
-
-      & .projects-text {
-        & h1 {
-          font-size: 4rem;
-        }
-        & p {
-          font-size: 2.2rem;
-        }
-      }
-
-      & .projects-div {
-        gap: 4rem;
-        padding: 0 1rem;
-      }
-    }
+  .home-grid .home-section .name-part span {
+    font-size: 5.5rem;
+    letter-spacing: 0.5rem;
+    margin-left: 0;
   }
 
-  .connect-grid {
-    & .connect-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 3rem;
+  .home-grid .home-section h1 {
+    font-size: 3.2rem;
+  }
 
-      & .connect-text {
-        & h1 {
-          font-size: 4rem;
-        }
-        & p {
-          font-size: 2.4rem;
-          width: 95%;
-        }
-      }
-    }
+  .home-grid .home-section p {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .about-grid .about-section {
+    min-height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .about-grid .about-section .text-section h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-grid .about-section .text-section p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .skills-grid .skills-section {
+    min-height: auto;
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .skills-grid .skills-section .skills-text h1 {
+    font-size: 3rem;
+  }
+
+  .skills-grid .skills-section .skills-text p {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid .skills-section .frontend-skills,
+  .skills-grid .skills-section .backend-skills,
+  .skills-grid .skills-section .database-skills,
+  .skills-grid .skills-section .other-skills {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .skills-grid .skills-section .frontend-text,
+  .skills-grid .skills-section .backend-text,
+  .skills-grid .skills-section .database-text,
+  .skills-grid .skills-section .other-text {
+    width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-text h1,
+  .skills-grid .skills-section .backend-text h1,
+  .skills-grid .skills-section .database-text h1,
+  .skills-grid .skills-section .other-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks,
+  .skills-grid .skills-section .backend-stacks,
+  .skills-grid .skills-section .database-stacks,
+  .skills-grid .skills-section .other-stacks {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks img,
+  .skills-grid .skills-section .backend-stacks .stacks img,
+  .skills-grid .skills-section .database-stacks .stacks img,
+  .skills-grid .skills-section .other-stacks .stacks img {
+    width: 28px;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks span,
+  .skills-grid .skills-section .backend-stacks .stacks span,
+  .skills-grid .skills-section .database-stacks .stacks span,
+  .skills-grid .skills-section .other-stacks .stacks span {
+    font-size: 1.4rem;
+  }
+
+  .projects-grid .projects-section {
+    min-height: auto;
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+
+  .projects-grid .projects-section .projects-text h1 {
+    font-size: 3rem;
+  }
+
+  .projects-grid .projects-section .projects-text p {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid .projects-section .projects-div {
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name h3 {
+    font-size: 2.4rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 1.7rem;
+  }
+
+  .connect-grid .connect-section {
+    min-height: auto;
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+
+  .connect-grid .connect-section .connect-text h1 {
+    font-size: 3rem;
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 1.8rem;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 581px) {
   html {
-    font-size: 30%;
+    font-size: 50%;
   }
 
   .main-container {
     gap: 5rem;
   }
 
-  .home-grid {
-    & .home-section {
-      min-height: auto;
-      padding: 5rem 1.5rem 3rem;
-
-      & .name-part {
-        & h5 {
-          font-size: 2.8rem;
-        }
-        & span {
-          font-size: 6rem;
-          letter-spacing: 0.4rem;
-          margin-left: 0;
-        }
-      }
-
-      & h1 {
-        font-size: 3.5rem;
-      }
-
-      & p {
-        font-size: 2rem;
-        margin-top: 1.5rem;
-      }
-    }
+  .home-grid .home-section {
+    min-height: auto;
+    padding: 4rem 1.5rem 2rem;
   }
 
-  .about-grid {
-    & .about-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-
-      & .text-section {
-        & h1 {
-          font-size: 3.5rem;
-        }
-        & p {
-          font-size: 2.2rem;
-          line-height: 3.2rem;
-        }
-      }
-    }
+  .home-grid .home-section .name-part h5 {
+    font-size: 2.2rem;
   }
 
-  .skills-grid {
-    & .skills-section {
-      min-height: auto;
-      gap: 3rem;
-      padding: 2rem 1rem;
-
-      & .skills-text {
-        & h1 {
-          font-size: 3.5rem;
-        }
-        & p {
-          font-size: 2rem;
-        }
-      }
-
-      & .frontend-skills,
-      & .backend-skills,
-      & .database-skills,
-      & .other-skills {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      & .frontend-text,
-      & .backend-text,
-      & .database-text,
-      & .other-text {
-        width: 100%;
-
-        & h1 {
-          font-size: 2.5rem;
-        }
-      }
-
-      & .frontend-stacks,
-      & .backend-stacks,
-      & .database-stacks,
-      & .other-stacks {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem 2rem;
-        width: 100%;
-
-        & .stacks {
-          & img {
-            width: 26px;
-          }
-          & span {
-            font-size: 1.5rem;
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part span {
+    font-size: 4.8rem;
+    letter-spacing: 0.4rem;
+    margin-left: 0;
   }
 
-  .projects-grid {
-    & .projects-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 2rem;
-
-      & .projects-text {
-        & h1 {
-          font-size: 3.5rem;
-        }
-        & p {
-          font-size: 2rem;
-        }
-      }
-
-      & .projects-div {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 3rem;
-        padding: 0;
-
-        & .card-wrapper {
-          & .project-card {
-            & .project-text-section {
-              gap: 2rem;
-              padding: 1.5rem;
-
-              & .project-name {
-                gap: 1rem;
-
-                & h3 {
-                  font-size: 2.8rem;
-                }
-                & p {
-                  font-size: 1.8rem;
-                }
-              }
-
-              & .project-stacks {
-                gap: 1rem;
-
-                & .stacks {
-                  padding: 0.5rem 1rem;
-
-                  & img {
-                    width: 16px;
-                  }
-                  & span {
-                    font-size: 1.4rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  .home-grid .home-section h1 {
+    font-size: 2.8rem;
   }
 
-  .connect-grid {
-    & .connect-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 2rem;
+  .home-grid .home-section p {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
 
-      & .connect-text {
-        gap: 2rem;
+  .about-grid .about-section {
+    min-height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
 
-        & h1 {
-          font-size: 3.5rem;
-        }
-        & p {
-          font-size: 2rem;
-          width: 100%;
-        }
-      }
+  .about-grid .about-section .text-section h1 {
+    font-size: 2.5rem;
+  }
 
-      & .contact-section {
-        gap: 3rem;
-        padding-top: 2rem;
-      }
-    }
+  .about-grid .about-section .text-section p {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  .skills-grid .skills-section {
+    min-height: auto;
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .skills-grid .skills-section .skills-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .skills-grid .skills-section .skills-text p {
+    font-size: 1.6rem;
+  }
+
+  .skills-grid .skills-section .frontend-skills,
+  .skills-grid .skills-section .backend-skills,
+  .skills-grid .skills-section .database-skills,
+  .skills-grid .skills-section .other-skills {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .skills-grid .skills-section .frontend-text,
+  .skills-grid .skills-section .backend-text,
+  .skills-grid .skills-section .database-text,
+  .skills-grid .skills-section .other-text {
+    width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-text h1,
+  .skills-grid .skills-section .backend-text h1,
+  .skills-grid .skills-section .database-text h1,
+  .skills-grid .skills-section .other-text h1 {
+    font-size: 2rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks,
+  .skills-grid .skills-section .backend-stacks,
+  .skills-grid .skills-section .database-stacks,
+  .skills-grid .skills-section .other-stacks {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks img,
+  .skills-grid .skills-section .backend-stacks .stacks img,
+  .skills-grid .skills-section .database-stacks .stacks img,
+  .skills-grid .skills-section .other-stacks .stacks img {
+    width: 24px;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks span,
+  .skills-grid .skills-section .backend-stacks .stacks span,
+  .skills-grid .skills-section .database-stacks .stacks span,
+  .skills-grid .skills-section .other-stacks .stacks span {
+    font-size: 1.3rem;
+  }
+
+  .projects-grid .projects-section {
+    min-height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .projects-grid .projects-section .projects-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-grid .projects-section .projects-text p {
+    font-size: 1.6rem;
+  }
+
+  .projects-grid .projects-section .projects-div {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name {
+    gap: 1rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name h3 {
+    font-size: 2.2rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 1.6rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks {
+    gap: 0.8rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks img {
+    width: 14px;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks span {
+    font-size: 1.2rem;
+  }
+
+  .connect-grid .connect-section {
+    min-height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .connect-grid .connect-section .connect-text {
+    gap: 1.5rem;
+  }
+
+  .connect-grid .connect-section .connect-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .connect-grid .connect-section .contact-section {
+    gap: 2.5rem;
+    padding-top: 1rem;
   }
 }
 
 @media screen and (max-width: 517px) {
   html {
-    font-size: 28%;
+    font-size: 48%;
   }
 
   .main-container {
     gap: 4rem;
   }
 
-  .home-grid {
-    & .home-section {
-      min-height: auto;
-      padding: 4rem 1.5rem 2rem;
-
-      & .name-part {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        & h5 {
-          font-size: 2.5rem;
-        }
-        & span {
-          font-size: 5rem;
-          letter-spacing: 0.3rem;
-          margin-left: 0;
-          white-space: normal;
-        }
-      }
-
-      & h1 {
-        font-size: 3rem;
-      }
-
-      & p {
-        font-size: 1.8rem;
-        margin-top: 1.5rem;
-      }
-    }
+  .home-grid .home-section {
+    min-height: auto;
+    padding: 3.5rem 1rem 2rem;
   }
 
-  .about-grid {
-    & .about-section {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 2rem;
-
-      & .image-section {
-        height: auto;
-        width: min(26rem, 65vw);
-        aspect-ratio: 1/1;
-      }
-
-      & .text-section {
-        & h1 {
-          font-size: 3rem;
-          margin-bottom: 1rem;
-        }
-        & p {
-          font-size: 2rem;
-          line-height: 3rem;
-        }
-      }
-    }
+  .home-grid .home-section .name-part {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .skills-grid {
-    & .skills-section {
-      min-height: auto;
-      gap: 2.5rem;
-      padding: 2rem 1rem;
-
-      & .skills-text {
-        & h1 {
-          font-size: 3rem;
-        }
-        & p {
-          font-size: 1.8rem;
-        }
-      }
-
-      & .frontend-skills,
-      & .backend-skills,
-      & .database-skills,
-      & .other-skills {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      & .frontend-text,
-      & .backend-text,
-      & .database-text,
-      & .other-text {
-        width: 100%;
-        & h1 {
-          font-size: 2.2rem;
-        }
-      }
-
-      & .frontend-stacks,
-      & .backend-stacks,
-      & .database-stacks,
-      & .other-stacks {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        width: 100%;
-
-        & .stacks {
-          & img {
-            width: 22px;
-          }
-          & span {
-            font-size: 1.4rem;
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part h5 {
+    font-size: 2rem;
   }
 
-  .projects-grid {
-    & .projects-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 2rem;
-
-      & .projects-text {
-        & h1 {
-          font-size: 3rem;
-        }
-        & p {
-          font-size: 1.8rem;
-        }
-      }
-
-      & .projects-div {
-        gap: 3rem;
-        padding: 0;
-
-        & .card-wrapper {
-          & .project-card {
-            & .project-text-section {
-              padding: 1.5rem;
-              gap: 1.5rem;
-
-              & .project-name {
-                gap: 1rem;
-
-                & h3 {
-                  font-size: 2.5rem;
-                }
-                & p {
-                  font-size: 1.6rem;
-                }
-              }
-
-              & .project-stacks {
-                gap: 0.8rem;
-
-                & .stacks {
-                  padding: 0.5rem 0.8rem;
-
-                  & img {
-                    width: 14px;
-                  }
-                  & span {
-                    font-size: 1.2rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part span {
+    font-size: 4.2rem;
+    letter-spacing: 0.3rem;
+    margin-left: 0;
+    white-space: normal;
   }
 
-  .skills-grid .skills-section .frontend-skills .frontend-stacks,
-  .skills-grid .skills-section .backend-skills .backend-stacks,
-  .skills-grid .skills-section .database-skills .database-stacks,
-  .skills-grid .skills-section .other-skills .other-stacks {
+  .home-grid .home-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-grid .home-section p {
+    font-size: 1.7rem;
+    margin-top: 1.2rem;
+  }
+
+  .about-grid .about-section {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .about-grid .about-section .image-section {
+    width: min(24rem, 60vw);
+  }
+
+  .about-grid .about-section .text-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-grid .about-section .text-section p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .skills-grid .skills-section {
+    min-height: auto;
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .skills-grid .skills-section .skills-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .skills-grid .skills-section .skills-text p {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid .skills-section .frontend-skills,
+  .skills-grid .skills-section .backend-skills,
+  .skills-grid .skills-section .database-skills,
+  .skills-grid .skills-section .other-skills {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skills-grid .skills-section .frontend-text,
+  .skills-grid .skills-section .backend-text,
+  .skills-grid .skills-section .database-text,
+  .skills-grid .skills-section .other-text {
+    width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-text h1,
+  .skills-grid .skills-section .backend-text h1,
+  .skills-grid .skills-section .database-text h1,
+  .skills-grid .skills-section .other-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks,
+  .skills-grid .skills-section .backend-stacks,
+  .skills-grid .skills-section .database-stacks,
+  .skills-grid .skills-section .other-stacks {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks img,
+  .skills-grid .skills-section .backend-stacks .stacks img,
+  .skills-grid .skills-section .database-stacks .stacks img,
+  .skills-grid .skills-section .other-stacks .stacks img {
+    width: 20px;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks span,
+  .skills-grid .skills-section .backend-stacks .stacks span,
+  .skills-grid .skills-section .database-stacks .stacks span,
+  .skills-grid .skills-section .other-stacks .stacks span {
+    font-size: 1.2rem;
+  }
+
+  .projects-grid .projects-section {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+  }
+
+  .projects-grid .projects-section .projects-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .projects-grid .projects-section .projects-text p {
+    font-size: 1.5rem;
+  }
+
+  .projects-grid .projects-section .projects-div {
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section {
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name {
+    gap: 0.8rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name h3 {
+    font-size: 2rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 1.4rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-stacks .stacks span {
+    font-size: 1.1rem;
+  }
+
+  .connect-grid .connect-section {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+  }
+
+  .connect-grid .connect-section .connect-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .connect-grid .connect-section .contact-section {
+    gap: 2rem;
+    padding-top: 0;
+  }
+
+  .connect-grid .connect-section .contact-section .contact-info {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .connect-grid .connect-section .contact-section .contact-info .info-details {
     gap: 1.5rem;
   }
 
-  .connect-grid {
-    & .connect-section {
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 2rem;
+  .connect-grid .connect-section .contact-section .contact-info .info-details .info-item {
+    gap: 1.2rem;
+  }
 
-      & .connect-text {
-        gap: 1.5rem;
+  .connect-grid .connect-section .contact-section .contact-info .info-details .info-item .info-icon {
+    font-size: 2.4rem;
+    padding: 0.5rem;
+  }
 
-        & h1 {
-          font-size: 3rem;
-        }
+  .connect-grid .connect-section .contact-section .contact-info .info-details .info-item .info-content h3 {
+    font-size: 1.4rem;
+  }
 
-        & p {
-          font-size: 1.8rem;
-          width: 100%;
-        }
-      }
+  .connect-grid .connect-section .contact-section .contact-info .info-details .info-item .info-content p,
+  .connect-grid .connect-section .contact-section .contact-info .info-details .info-item .info-content a {
+    font-size: 1.3rem;
+  }
 
-      & .contact-section {
-        gap: 2.5rem;
-        padding-top: 1rem;
+  .connect-grid .connect-section .contact-section .contact-info .social-medias-horizontal {
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+  }
 
-        & .contact-info {
-          padding: 2rem 1.5rem;
+  .connect-grid .connect-section .contact-section .contact-info .social-medias-horizontal a {
+    font-size: 2.2rem;
+  }
 
-          & .info-details {
-            gap: 2rem;
+  .connect-grid .connect-section .contact-section .contact-info .contact-quote {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+  }
 
-            & .info-item {
-              gap: 1.5rem;
+  .connect-grid .connect-section .contact-section .contact-info .contact-quote p {
+    font-size: 1.2rem;
+  }
 
-              & .info-icon {
-                font-size: 2.8rem;
-                padding: 0.6rem;
-              }
+  .connect-grid .connect-section .contact-section .contact-info .contact-quote span {
+    font-size: 1rem;
+  }
 
-              & .info-content {
-                & h3 {
-                  font-size: 1.6rem;
-                }
-                & p, & a {
-                  font-size: 1.4rem;
-                }
-              }
-            }
-          }
+  .connect-grid .connect-section .contact-section .contact-form form {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
 
-          & .social-medias-horizontal {
-            gap: 1.5rem;
-            margin-top: 2rem;
-            padding-top: 1.5rem;
+  .connect-grid .connect-section .contact-section .contact-form form .form-element label {
+    font-size: 1.3rem;
+  }
 
-            & a {
-              font-size: 2.5rem;
-            }
-          }
+  .connect-grid .connect-section .contact-section .contact-form form .form-element input {
+    height: 3.2rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
 
-          & .contact-quote {
-            margin-top: 1.5rem;
-            padding-left: 1rem;
+  .connect-grid .connect-section .contact-section .contact-form form .form-element textarea {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
 
-            & p {
-              font-size: 1.3rem;
-            }
-            & span {
-              font-size: 1.1rem;
-            }
-          }
-        }
-
-        & .contact-form {
-          & form {
-            grid-template-columns: 1fr;
-            padding: 2rem;
-            gap: 1.5rem;
-
-            & .form-element {
-              & label {
-                font-size: 1.4rem;
-              }
-              & input {
-                height: 3.5rem;
-                font-size: 1.4rem;
-                padding: 0.5rem;
-              }
-              & textarea {
-                font-size: 1.4rem;
-                padding: 0.5rem;
-              }
-            }
-
-            & .send-btn {
-              font-size: 1.5rem;
-              padding: 1rem 1.5rem;
-              margin-top: 1rem;
-            }
-          }
-        }
-      }
-    }
+  .connect-grid .connect-section .contact-section .contact-form form .send-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.2rem;
+    margin-top: 0.5rem;
   }
 }
 
 @media screen and (max-width: 420px) {
   html {
-    font-size: 25%;
+    font-size: 45%;
   }
 
   .main-container {
     gap: 3rem;
   }
 
-  .home-grid {
-    & .home-section {
-      padding: 3rem 1rem 2rem;
-
-      & .name-part {
-        & h5 {
-          font-size: 2.2rem;
-        }
-        & span {
-          font-size: 4.5rem;
-          letter-spacing: 0.3rem;
-        }
-      }
-
-      & p {
-        font-size: 1.7rem;
-      }
-    }
+  .home-grid .home-section {
+    padding: 3rem 1rem 2rem;
   }
 
-  .about-grid {
-    & .about-section {
-      & .image-section {
-        width: min(22rem, 70vw);
-      }
-      & .text-section {
-        & h1 {
-          font-size: 2.5rem;
-        }
-        & p {
-          font-size: 1.8rem;
-          line-height: 2.6rem;
-        }
-      }
-    }
+  .home-grid .home-section .name-part h5 {
+    font-size: 1.8rem;
   }
 
-  .skills-grid {
-    & .skills-section {
-      & .skills-text {
-        & h1 {
-          font-size: 2.5rem;
-        }
-        & p {
-          font-size: 1.6rem;
-        }
-      }
-
-      & .frontend-text,
-      & .backend-text,
-      & .database-text,
-      & .other-text {
-        & h1 {
-          font-size: 2rem;
-        }
-      }
-
-      & .frontend-stacks,
-      & .backend-stacks,
-      & .database-stacks,
-      & .other-stacks {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-
-        & .stacks {
-          & img {
-            width: 20px;
-          }
-          & span {
-            font-size: 1.3rem;
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part span {
+    font-size: 3.8rem;
+    letter-spacing: 0.3rem;
   }
 
-  .projects-grid {
-    & .projects-section {
-      & .projects-text {
-        & h1 {
-          font-size: 2.5rem;
-        }
-        & p {
-          font-size: 1.6rem;
-        }
-      }
-
-      & .projects-div {
-        & .card-wrapper {
-          & .project-card {
-            & .project-text-section {
-              & .project-name {
-                & h3 {
-                  font-size: 2.2rem;
-                }
-                & p {
-                  font-size: 1.5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  .home-grid .home-section p {
+    font-size: 1.6rem;
   }
 
-  .connect-grid {
-    & .connect-section {
-      & .connect-text {
-        & h1 {
-          font-size: 2.5rem;
-        }
-        & p {
-          font-size: 1.6rem;
-        }
-      }
-    }
+  .about-grid .about-section .image-section {
+    width: min(20rem, 65vw);
+  }
+
+  .about-grid .about-section .text-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-grid .about-section .text-section p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  .skills-grid .skills-section .skills-text h1 {
+    font-size: 2rem;
+  }
+
+  .skills-grid .skills-section .skills-text p {
+    font-size: 1.4rem;
+  }
+
+  .skills-grid .skills-section .frontend-text h1,
+  .skills-grid .skills-section .backend-text h1,
+  .skills-grid .skills-section .database-text h1,
+  .skills-grid .skills-section .other-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks,
+  .skills-grid .skills-section .backend-stacks,
+  .skills-grid .skills-section .database-stacks,
+  .skills-grid .skills-section .other-stacks {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks img,
+  .skills-grid .skills-section .backend-stacks .stacks img,
+  .skills-grid .skills-section .database-stacks .stacks img,
+  .skills-grid .skills-section .other-stacks .stacks img {
+    width: 18px;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks span,
+  .skills-grid .skills-section .backend-stacks .stacks span,
+  .skills-grid .skills-section .database-stacks .stacks span,
+  .skills-grid .skills-section .other-stacks .stacks span {
+    font-size: 1.1rem;
+  }
+
+  .projects-grid .projects-section .projects-text h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid .projects-section .projects-text p {
+    font-size: 1.4rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name h3 {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 1.3rem;
+  }
+
+  .connect-grid .connect-section .connect-text h1 {
+    font-size: 2rem;
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 358px) {
   html {
-    font-size: 22%;
+    font-size: 42%;
   }
 
   .main-container {
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   .home-grid {
-    padding-top: 8rem;
-    & .home-section {
-      min-height: auto;
-      padding: 3rem 1rem 2rem;
-
-      & .name-part {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        & h5 {
-          font-size: 2rem;
-        }
-
-        & span {
-          font-size: 4rem;
-          letter-spacing: 0.2rem;
-          margin-left: 0;
-        }
-      }
-
-      & p {
-        font-size: 1.6rem;
-      }
-    }
+    padding-top: 6rem;
   }
 
-  .about-grid {
-    & .about-section {
-      min-height: auto;
-      & .image-section {
-        width: min(20rem, 75vw);
-      }
-      & .text-section {
-        & h1 {
-          font-size: 2.2rem;
-        }
-        & p {
-          font-size: 1.7rem;
-          line-height: 2.4rem;
-        }
-      }
-    }
+  .home-grid .home-section {
+    min-height: auto;
+    padding: 2.5rem 0.8rem 1.5rem;
   }
 
-  .skills-grid {
-    & .skills-section {
-      min-height: auto;
-      gap: 2rem;
-
-      & .skills-text {
-        & h1 {
-          font-size: 2.2rem;
-        }
-        & p {
-          font-size: 1.5rem;
-        }
-      }
-
-      & .frontend-stacks,
-      & .backend-stacks,
-      & .database-stacks,
-      & .other-stacks {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-
-        & .stacks {
-          & img {
-            width: 18px;
-          }
-          & span {
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .projects-grid {
-    & .projects-section {
-      min-height: auto;
-      gap: 2rem;
-
-      & .projects-text {
-        & h1 {
-          font-size: 2.2rem;
-        }
-        & p {
-          font-size: 1.5rem;
-        }
-      }
-
-      & .projects-div {
-        & .card-wrapper {
-          & .project-card {
-            & .project-text-section {
-              & .project-name {
-                & h3 {
-                  font-size: 2rem;
-                }
-                & p {
-                  font-size: 1.4rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  .home-grid .home-section .name-part h5 {
+    font-size: 1.6rem;
   }
 
-  .connect-grid {
-    & .connect-section {
-      min-height: auto;
+  .home-grid .home-section .name-part span {
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+    margin-left: 0;
+  }
 
-      & .connect-text {
-        & h1 {
-          font-size: 2.2rem;
-        }
-        & p {
-          font-size: 1.5rem;
-        }
-      }
-    }
+  .home-grid .home-section p {
+    font-size: 1.4rem;
+  }
+
+  .about-grid .about-section {
+    min-height: auto;
+  }
+
+  .about-grid .about-section .image-section {
+    width: min(18rem, 70vw);
+  }
+
+  .about-grid .about-section .text-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-grid .about-section .text-section p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .skills-grid .skills-section {
+    min-height: auto;
+    gap: 1.5rem;
+  }
+
+  .skills-grid .skills-section .skills-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid .skills-section .skills-text p {
+    font-size: 1.3rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks,
+  .skills-grid .skills-section .backend-stacks,
+  .skills-grid .skills-section .database-stacks,
+  .skills-grid .skills-section .other-stacks {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks img,
+  .skills-grid .skills-section .backend-stacks .stacks img,
+  .skills-grid .skills-section .database-stacks .stacks img,
+  .skills-grid .skills-section .other-stacks .stacks img {
+    width: 16px;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks span,
+  .skills-grid .skills-section .backend-stacks .stacks span,
+  .skills-grid .skills-section .database-stacks .stacks span,
+  .skills-grid .skills-section .other-stacks .stacks span {
+    font-size: 1rem;
+  }
+
+  .projects-grid .projects-section {
+    min-height: auto;
+    gap: 1.5rem;
+  }
+
+  .projects-grid .projects-section .projects-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid .projects-section .projects-text p {
+    font-size: 1.3rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name h3 {
+    font-size: 1.6rem;
+  }
+
+  .projects-grid .projects-section .projects-div .card-wrapper .project-card .project-text-section .project-name p {
+    font-size: 1.2rem;
+  }
+
+  .connect-grid .connect-section {
+    min-height: auto;
+  }
+
+  .connect-grid .connect-section .connect-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 1.3rem;
   }
 }
 
