@@ -11,6 +11,13 @@ html {
   font-size: 62.5%;
   font-family: "Roboto Slab", serif;
   background-color: #222;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 p,
@@ -24,10 +31,11 @@ button {
 
 header {
   width: 100%;
-  background-color: #323232;
+  background-color: #2d2d2d;
   padding: 1.7rem 0;
   position: fixed;
   z-index: 999;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -118,6 +126,10 @@ header {
     display: flex;
   }
 
+  .ham-bar {
+    height: 0.3rem;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -138,7 +150,7 @@ header {
   }
 
   .nav-menu.active {
-    max-height: 40rem;
+    max-height: 45rem;
     opacity: 1;
     pointer-events: auto;
   }
@@ -147,11 +159,29 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 3rem 0;
-    gap: 3rem;
+    padding: 2.5rem 0;
+    gap: 2.5rem;
   }
 
   .nav-menu ul li a {
     font-size: 2.4rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-menu ul li a {
+    font-size: 2rem;
+    padding: 1.2rem 2rem;
+  }
+
+  .nav-menu ul {
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  header {
+    padding: 1.3rem 0;
   }
 }
