@@ -170,18 +170,51 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .nav-menu ul li a {
-    font-size: 2rem;
-    padding: 1.2rem 2rem;
+    font-size: 2.2rem;
+    padding: 1rem 1.5rem;
   }
 
   .nav-menu ul {
-    gap: 1.5rem;
-    padding: 2rem 0;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
   }
 
   header {
-    padding: 1.3rem 0;
+    padding: 1.2rem 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-menu ul li a {
+    font-size: 2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .nav-menu ul {
+    gap: 0.8rem;
+    padding: 1.2rem 0;
+  }
+
+  header {
+    padding: 1rem 0;
+  }
+
+  .ham-menu {
+    width: 2.8rem;
+    height: 1.8rem;
+  }
+
+  .ham-bar {
+    height: 0.25rem;
+  }
+
+  .ham-bar.clicked:nth-child(1) {
+    transform: translateY(0.78rem) rotate(45deg);
+  }
+
+  .ham-bar.clicked:nth-child(3) {
+    transform: translateY(-0.78rem) rotate(-45deg);
   }
 }

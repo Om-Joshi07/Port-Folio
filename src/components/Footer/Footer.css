@@ -25,12 +25,26 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   footer {
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .footer-grid .text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-grid .text {
+    font-size: 1.3rem;
   }
 }
