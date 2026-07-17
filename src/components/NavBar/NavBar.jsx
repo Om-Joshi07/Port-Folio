@@ -48,7 +48,7 @@ const NavBar = () => {
     <header>
       <div className="container">
         <div className="navbar-grid">
-          <nav className={isMenuOpen ? "menu-mobile" : "menu-web"}>
+          <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
             <ul>
               <li>
                 <a 
