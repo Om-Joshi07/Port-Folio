@@ -181,7 +181,8 @@ main {
   width: 100%;
 
   & .image-section {
-    width: 45rem;
+    width: min(45rem, 70vw);
+    max-width: 45rem;
     aspect-ratio: 1;
     border-radius: 50%;
     position: relative;
@@ -1235,6 +1236,13 @@ main {
         flex-direction: column;
       }
 
+      & .frontend-stacks,
+      & .backend-stacks,
+      & .database-stacks,
+      & .other-stacks {
+        width: 100%;
+      }
+
       & .frontend-skills,
       & .frontend-text {
         display: flex;
@@ -1458,7 +1466,8 @@ main {
       align-items: center;
 
       & .image-section {
-        height: 100%;
+        height: auto;
+        width: min(30rem, 70vw);
         aspect-ratio: 1/1;
       }
 
@@ -1469,40 +1478,6 @@ main {
         & p {
           font-size: 3.7rem;
           line-height: 5rem;
-        }
-      }
-    }
-  }
-
-  .skills-grid {
-    .skills-section {
-      .frontend-skills {
-        .frontend-stacks {
-          grid-template-columns: repeat(5, 1fr);
-        }
-      }
-    }
-
-    & .skills-section {
-      & .backend-skills {
-        & .backend-stacks {
-          grid-template-columns: repeat(5, 1fr);
-        }
-      }
-    }
-
-    & .skills-section {
-      & .database-skills {
-        & .database-stacks {
-          grid-template-columns: repeat(5, 1fr);
-        }
-      }
-    }
-
-    & .skills-section {
-      & .other-skills {
-        & .other-stacks {
-          grid-template-columns: repeat(5, 1fr);
         }
       }
     }
@@ -1531,7 +1506,7 @@ main {
       min-height: auto;
 
       & .projects-div {
-        gap: 17rem;
+        gap: 5rem;
         & .card-wrapper {
           & .project-card {
             & .project-text-section {
@@ -1564,13 +1539,21 @@ main {
     }
   }
 
+  .skills-grid .skills-section .frontend-skills .frontend-stacks,
+  .skills-grid .skills-section .backend-skills .backend-stacks,
+  .skills-grid .skills-section .database-skills .database-stacks,
+  .skills-grid .skills-section .other-skills .other-stacks {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 4rem;
+  }
+
   .connect-grid {
     & .connect-section {
       min-height: auto;
       padding: 0rem;
 
       & .connect-text {
-        gap: 7.3rem;
+        gap: 4rem;
 
         & h1 {
           font-size: 7rem;
@@ -1581,7 +1564,50 @@ main {
           width: 95%;
         }
       }
+
+      & .contact-section {
+        & .contact-form {
+          & form {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
     }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 20%;
+  }
+
+  .skills-grid .skills-section .frontend-skills .frontend-stacks,
+  .skills-grid .skills-section .backend-skills .backend-stacks,
+  .skills-grid .skills-section .database-skills .database-stacks,
+  .skills-grid .skills-section .other-skills .other-stacks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-container {
+    gap: 5rem;
+  }
+
+  .home-grid .home-section .name-part span {
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .about-grid .about-section .image-section {
+    width: min(25rem, 75vw);
+  }
+
+  .connect-grid .connect-section .connect-text h1 {
+    font-size: 5rem;
+  }
+
+  .connect-grid .connect-section .connect-text p {
+    font-size: 3rem;
+    width: 100%;
   }
 }
 
@@ -1592,17 +1618,26 @@ main {
   }
 
   .main-container {
-    gap: 17rem;
-
+    gap: 5rem;
   }
 
   .home-grid {
-    padding-top: 25rem;
+    padding-top: 20rem;
     & .home-section {
       & .name-part {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        & h5 {
+          font-size: 3rem;
+        }
+
+        & span {
+          font-size: 6rem;
+          letter-spacing: 0.3rem;
+          margin-left: 0;
+        }
       }
     }
   }
@@ -1618,12 +1653,30 @@ main {
   .about-grid {
     & .about-section {
       min-height: auto;
+      & .image-section {
+        width: min(22rem, 80vw);
+      }
+      & .text-section {
+        & h1 {
+          font-size: 4rem;
+        }
+        & p {
+          font-size: 3rem;
+          line-height: 4rem;
+        }
+      }
     }
   }
 
   .skills-grid {
     & .skills-section {
       min-height: auto;
+      & .frontend-skills .frontend-stacks,
+      & .backend-skills .backend-stacks,
+      & .database-skills .database-stacks,
+      & .other-skills .other-stacks {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 
@@ -1637,5 +1690,25 @@ main {
     & .connect-section {
       min-height: auto;
     }
+  }
+}
+
+/* Mobile-friendly touch improvements */
+@media (hover: none) and (pointer: coarse) {
+  .button, 
+  .send-btn,
+  .nav-menu ul li a,
+  .ham-menu,
+  .stacks,
+  a {
+    cursor: default;
+  }
+
+  .project-card .project-text-section .project-stacks .stacks {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .project-card .project-text-section .project-stacks .stacks span {
+    font-size: 1.4rem;
   }
 }
