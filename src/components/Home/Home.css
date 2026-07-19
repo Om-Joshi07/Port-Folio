@@ -34,7 +34,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}s
+}
 
 .home-section {
   /* background-color: rgb(136, 4, 4); */
@@ -1096,6 +1096,8 @@ main {
   .home-grid .home-section .name-part span {
     font-size: 6rem;
     letter-spacing: 0.6rem;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .home-grid .home-section h1 {
@@ -1236,6 +1238,8 @@ main {
     font-size: 5.5rem;
     letter-spacing: 0.5rem;
     margin-left: 0;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .home-grid .home-section h1 {
@@ -1402,6 +1406,8 @@ main {
     font-size: 4.8rem;
     letter-spacing: 0.4rem;
     margin-left: 0;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .home-grid .home-section h1 {
@@ -1597,7 +1603,8 @@ main {
     font-size: 4.2rem;
     letter-spacing: 0.3rem;
     margin-left: 0;
-    white-space: normal;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .home-grid .home-section h1 {
@@ -1865,6 +1872,8 @@ main {
   .home-grid .home-section .name-part span {
     font-size: 3.8rem;
     letter-spacing: 0.3rem;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .home-grid .home-section p {
@@ -1995,6 +2004,8 @@ main {
     font-size: 3.2rem;
     letter-spacing: 0.2rem;
     margin-left: 0;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .home-grid .home-section p {
