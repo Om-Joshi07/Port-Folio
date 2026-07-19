@@ -34,7 +34,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}s
 
 .home-section {
   /* background-color: rgb(136, 4, 4); */
@@ -1081,12 +1081,12 @@ main {
   }
 
   .main-container {
-    gap: 8rem;
+    gap: 5rem;
   }
 
   .home-grid .home-section {
     min-height: auto;
-    padding: 6rem 2rem 3rem;
+    padding: 5rem 2rem 3rem;
   }
 
   .home-grid .home-section .name-part h5 {
@@ -1110,6 +1110,11 @@ main {
   .about-grid .about-section {
     min-height: auto;
     gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid .about-section .image-section {
+    justify-self: center;
   }
 
   .about-grid .about-section .text-section p {
@@ -1125,7 +1130,33 @@ main {
   .skills-grid .skills-section .backend-stacks,
   .skills-grid .skills-section .database-stacks,
   .skills-grid .skills-section .other-stacks {
-    gap: 3rem 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks,
+  .skills-grid .skills-section .backend-stacks .stacks,
+  .skills-grid .skills-section .database-stacks .stacks,
+  .skills-grid .skills-section .other-stacks .stacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks img,
+  .skills-grid .skills-section .backend-stacks .stacks img,
+  .skills-grid .skills-section .database-stacks .stacks img,
+  .skills-grid .skills-section .other-stacks .stacks img {
+    width: 40px;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks span,
+  .skills-grid .skills-section .backend-stacks .stacks span,
+  .skills-grid .skills-section .database-stacks .stacks span,
+  .skills-grid .skills-section .other-stacks .stacks span {
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .projects-grid .projects-section {
@@ -1184,12 +1215,12 @@ main {
   }
 
   .main-container {
-    gap: 6rem;
+    gap: 4rem;
   }
 
   .home-grid .home-section {
     min-height: auto;
-    padding: 5rem 1.5rem 3rem;
+    padding: 4rem 1.5rem 3rem;
   }
 
   .home-grid .home-section .name-part {
@@ -1220,6 +1251,11 @@ main {
     min-height: auto;
     padding: 2rem 1rem;
     gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid .about-section .image-section {
+    justify-self: center;
   }
 
   .about-grid .about-section .text-section h1 {
@@ -1271,16 +1307,26 @@ main {
   .skills-grid .skills-section .backend-stacks,
   .skills-grid .skills-section .database-stacks,
   .skills-grid .skills-section .other-stacks {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks,
+  .skills-grid .skills-section .backend-stacks .stacks,
+  .skills-grid .skills-section .database-stacks .stacks,
+  .skills-grid .skills-section .other-stacks .stacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks img,
   .skills-grid .skills-section .backend-stacks .stacks img,
   .skills-grid .skills-section .database-stacks .stacks img,
   .skills-grid .skills-section .other-stacks .stacks img {
-    width: 28px;
+    width: 35px;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks span,
@@ -1288,6 +1334,7 @@ main {
   .skills-grid .skills-section .database-stacks .stacks span,
   .skills-grid .skills-section .other-stacks .stacks span {
     font-size: 1.4rem;
+    text-align: center;
   }
 
   .projects-grid .projects-section {
@@ -1339,12 +1386,12 @@ main {
   }
 
   .main-container {
-    gap: 5rem;
+    gap: 3.5rem;
   }
 
   .home-grid .home-section {
     min-height: auto;
-    padding: 4rem 1.5rem 2rem;
+    padding: 3.5rem 1.5rem 2rem;
   }
 
   .home-grid .home-section .name-part h5 {
@@ -1370,6 +1417,11 @@ main {
     min-height: auto;
     padding: 2rem 1rem;
     gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid .about-section .image-section {
+    justify-self: center;
   }
 
   .about-grid .about-section .text-section h1 {
@@ -1421,8 +1473,8 @@ main {
   .skills-grid .skills-section .backend-stacks,
   .skills-grid .skills-section .database-stacks,
   .skills-grid .skills-section .other-stacks {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
     width: 100%;
   }
 
@@ -1430,14 +1482,14 @@ main {
   .skills-grid .skills-section .backend-stacks .stacks img,
   .skills-grid .skills-section .database-stacks .stacks img,
   .skills-grid .skills-section .other-stacks .stacks img {
-    width: 24px;
+    width: 22px;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks span,
   .skills-grid .skills-section .backend-stacks .stacks span,
   .skills-grid .skills-section .database-stacks .stacks span,
   .skills-grid .skills-section .other-stacks .stacks span {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .projects-grid .projects-section {
@@ -1524,12 +1576,12 @@ main {
   }
 
   .main-container {
-    gap: 4rem;
+    gap: 2.5rem;
   }
 
   .home-grid .home-section {
     min-height: auto;
-    padding: 3.5rem 1rem 2rem;
+    padding: 3rem 1rem 2rem;
   }
 
   .home-grid .home-section .name-part {
@@ -1619,23 +1671,41 @@ main {
   .skills-grid .skills-section .backend-stacks,
   .skills-grid .skills-section .database-stacks,
   .skills-grid .skills-section .other-stacks {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     width: 100%;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks,
+  .skills-grid .skills-section .backend-stacks .stacks,
+  .skills-grid .skills-section .database-stacks .stacks,
+  .skills-grid .skills-section .other-stacks .stacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks img,
   .skills-grid .skills-section .backend-stacks .stacks img,
   .skills-grid .skills-section .database-stacks .stacks img,
   .skills-grid .skills-section .other-stacks .stacks img {
-    width: 20px;
+    width: 34px;
+    height: auto;
+    flex-shrink: 0;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks span,
   .skills-grid .skills-section .backend-stacks .stacks span,
   .skills-grid .skills-section .database-stacks .stacks span,
   .skills-grid .skills-section .other-stacks .stacks span {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    word-break: break-word;
   }
 
   .projects-grid .projects-section {
@@ -1781,11 +1851,11 @@ main {
   }
 
   .main-container {
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .home-grid .home-section {
-    padding: 3rem 1rem 2rem;
+    padding: 2.5rem 1rem 2rem;
   }
 
   .home-grid .home-section .name-part h5 {
@@ -1833,22 +1903,40 @@ main {
   .skills-grid .skills-section .backend-stacks,
   .skills-grid .skills-section .database-stacks,
   .skills-grid .skills-section .other-stacks {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks,
+  .skills-grid .skills-section .backend-stacks .stacks,
+  .skills-grid .skills-section .database-stacks .stacks,
+  .skills-grid .skills-section .other-stacks .stacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks img,
   .skills-grid .skills-section .backend-stacks .stacks img,
   .skills-grid .skills-section .database-stacks .stacks img,
   .skills-grid .skills-section .other-stacks .stacks img {
-    width: 18px;
+    width: 32px;
+    height: auto;
+    flex-shrink: 0;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks span,
   .skills-grid .skills-section .backend-stacks .stacks span,
   .skills-grid .skills-section .database-stacks .stacks span,
   .skills-grid .skills-section .other-stacks .stacks span {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    word-break: break-word;
   }
 
   .projects-grid .projects-section .projects-text h1 {
@@ -1882,11 +1970,11 @@ main {
   }
 
   .main-container {
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   .home-grid {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
 
   .home-grid .home-section {
@@ -1948,21 +2036,39 @@ main {
   .skills-grid .skills-section .database-stacks,
   .skills-grid .skills-section .other-stacks {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.2rem;
+  }
+
+  .skills-grid .skills-section .frontend-stacks .stacks,
+  .skills-grid .skills-section .backend-stacks .stacks,
+  .skills-grid .skills-section .database-stacks .stacks,
+  .skills-grid .skills-section .other-stacks .stacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks img,
   .skills-grid .skills-section .backend-stacks .stacks img,
   .skills-grid .skills-section .database-stacks .stacks img,
   .skills-grid .skills-section .other-stacks .stacks img {
-    width: 16px;
+    width: 28px;
+    height: auto;
+    flex-shrink: 0;
   }
 
   .skills-grid .skills-section .frontend-stacks .stacks span,
   .skills-grid .skills-section .backend-stacks .stacks span,
   .skills-grid .skills-section .database-stacks .stacks span,
   .skills-grid .skills-section .other-stacks .stacks span {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    word-break: break-word;
   }
 
   .projects-grid .projects-section {
