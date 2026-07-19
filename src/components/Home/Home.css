@@ -1883,14 +1883,17 @@ main {
 
   .home-grid {
     padding-top: 1.5rem;
+    min-height: auto;
   }
 
   .about-grid {
-    padding-top: 0.5rem;
+    padding-top: 0rem;
+    min-height: auto;
   }
 
   .skills-grid {
-    padding-top: 0.5rem;
+    padding-top: 0rem;
+    min-height: auto;
   }
 
   .projects-grid {
@@ -1902,7 +1905,28 @@ main {
   }
 
   .home-grid .home-section {
-    padding: 2.5rem 1rem 2rem;
+    padding: 1.5rem 1rem 1rem;
+    min-height: auto;
+  }
+
+  .about-grid .about-section {
+    padding: 1.5rem 1rem 1rem;
+    min-height: auto;
+  }
+
+  .skills-grid .skills-section {
+    padding: 1.5rem 1rem 1rem;
+    min-height: auto;
+  }
+
+  .projects-grid .projects-section {
+    padding: 1rem 1rem;
+    min-height: auto;
+  }
+
+  .connect-grid .connect-section {
+    padding: 1rem 1rem;
+    min-height: auto;
   }
 
   .home-grid .home-section .name-part h5 {
@@ -2019,19 +2043,22 @@ main {
   }
 
   .main-container {
-    gap: 0rem;
+    gap: 11rem;
   }
 
   .home-grid {
-    padding-top: 1rem;
+    padding-top: 11rem;
+    min-height: auto;
   }
 
   .about-grid {
-    padding-top: 0.5rem;
+    padding-top: 0rem;
+    min-height: auto;
   }
 
   .skills-grid {
-    padding-top: 0.5rem;
+    padding-top: 0rem;
+    min-height: auto;
   }
 
   .projects-grid {
@@ -2044,7 +2071,29 @@ main {
 
   .home-grid .home-section {
     min-height: auto;
-    padding: 2.5rem 0.8rem 1.5rem;
+    padding: 1.2rem 0.8rem 1rem;
+  }
+
+  .about-grid .about-section {
+    min-height: auto;
+    padding: 1.2rem 0.8rem 1rem;
+  }
+
+  .skills-grid .skills-section {
+    min-height: auto;
+    gap: 1.5rem;
+    padding: 1.2rem 0.8rem 1rem;
+  }
+
+  .projects-grid .projects-section {
+    min-height: auto;
+    gap: 1.5rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .connect-grid .connect-section {
+    min-height: auto;
+    padding: 1rem 0.8rem;
   }
 
   .home-grid .home-section .name-part {
@@ -2068,10 +2117,6 @@ main {
     font-size: 1.4rem;
   }
 
-  .about-grid .about-section {
-    min-height: auto;
-  }
-
   .about-grid .about-section .image-section {
     width: min(18rem, 70vw);
   }
@@ -2083,11 +2128,6 @@ main {
   .about-grid .about-section .text-section p {
     font-size: 1.4rem;
     line-height: 2rem;
-  }
-
-  .skills-grid .skills-section {
-    min-height: auto;
-    gap: 1.5rem;
   }
 
   .skills-grid .skills-section .skills-text h1 {
@@ -2183,14 +2223,17 @@ main {
 
   .home-grid {
     padding-top: 1rem;
+    min-height: auto;
   }
 
   .about-grid {
-    padding-top: 0.3rem;
+    padding-top: 0rem;
+    min-height: auto;
   }
 
   .skills-grid {
-    padding-top: 0.3rem;
+    padding-top: 0rem;
+    min-height: auto;
   }
 
   .projects-grid {
@@ -2202,7 +2245,31 @@ main {
   }
 
   .home-grid .home-section {
-    padding: 2rem 0.8rem 1.5rem;
+    padding: 1rem 0.8rem 0.8rem;
+    min-height: auto;
+  }
+
+  .about-grid .about-section {
+    padding: 1rem 0.8rem 0.8rem;
+    min-height: auto;
+  }
+
+  .skills-grid .skills-section {
+    gap: 1rem;
+    padding: 1rem 0.8rem 0.8rem;
+    min-height: auto;
+  }
+
+  .projects-grid .projects-section {
+    padding: 0.8rem;
+    gap: 1.2rem;
+    min-height: auto;
+  }
+
+  .connect-grid .connect-section {
+    padding: 0.8rem;
+    gap: 1.5rem;
+    min-height: auto;
   }
 
   .home-grid .home-section .name-part h5 {
@@ -2231,10 +2298,6 @@ main {
   .about-grid .about-section .text-section p {
     font-size: 1.3rem;
     line-height: 1.9rem;
-  }
-
-  .skills-grid .skills-section {
-    gap: 1.2rem;
   }
 
   .skills-grid .skills-section .skills-text h1 {
