@@ -1878,11 +1878,11 @@ main {
   }
 
   .main-container {
-    gap: 0rem;
+    gap: 12rem;
   }
 
   .home-grid {
-    padding-top: 1.5rem;
+    padding-top: 11.5rem;
     min-height: auto;
   }
 
@@ -2218,11 +2218,11 @@ main {
   }
 
   .main-container {
-    gap: 0rem;
+    gap: 12rem;
   }
 
   .home-grid {
-    padding-top: 1rem;
+    padding-top: 11.5rem;
     min-height: auto;
   }
 
