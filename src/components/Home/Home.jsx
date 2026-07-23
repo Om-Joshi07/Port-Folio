@@ -5,6 +5,7 @@ import { VscGithubInverted } from "react-icons/vsc";
 import { BsInstagram, BsStackOverflow } from "react-icons/bs";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const TECH_STACKS = [
   {
@@ -54,16 +55,20 @@ const TECH_STACKS = [
 const PROJECTS = [
   {
     title: "Hospital Management System",
-    description: "A Python-based Hospital Management System built using Object-Oriented Programming (OOP) concepts. This console-based project allows hospital staff and admins to perform a variety of operations such as managing doctors and patients, storing data, generating reports, and more.",
+    description: "A Python-based Hospital Management System built using Object-Oriented Programming (OOP) concepts. Allows hospital staff and admins to perform operations such as managing doctors and patients, storing data, and generating reports.",
     image: "/Hospital_Management_System.jpg",
+    github: "https://github.com/Om-Joshi07/Hospital-Management-System",
+    liveDemo: null,
     stacks: [
       { name: "Python", icon: "/python.svg" },
     ],
   },
   {
     title: "Smart Heating Home",
-    description: "An Arduino-based Smart Home Heating System designed in Tinkercad. It uses sensors like temperature, motion, and light to monitor and control home conditions automatically. An RGB LED and LCD display provide feedback, making the system energy-efficient and responsive.",
+    description: "An Arduino-based Smart Home Heating System designed in Tinkercad. Uses sensors like temperature, motion, and light to monitor and control home conditions automatically with LCD visual feedback.",
     image: "/Smart_Heating_Home.jpg",
+    github: "https://github.com/Om-Joshi07/Smart-Home-Heating-System",
+    liveDemo: "https://www.tinkercad.com/things/4QJIbq461wX-smart-heating-home",
     stacks: [
       { name: "TinkerCAD", icon: "/tinkercad.svg" },
       { name: "Arduino", icon: "/arduino.svg" },
@@ -71,8 +76,10 @@ const PROJECTS = [
   },
   {
     title: "Beast Esports",
-    description: "Beast Esport is an online eSports platform that brings players and fans together in one place. Users can watch live tournaments, scrims, and competitive matches while players register for events and participate directly on the site. By combining streaming, competition, and community interaction, Beast Esport offers a complete hub for eSports enthusiasts.",
+    description: "An online eSports platform bringing players and fans together. Users watch live tournaments, scrims, and competitive matches while players register for events directly on the hub.",
     image: "/Beast_Esports.png",
+    github: "https://github.com/Om-Joshi07/Beast-Esports",
+    liveDemo: "https://beastesports.com",
     stacks: [
       { name: "HTML", icon: "/html.svg" },
       { name: "CSS", icon: "/css.svg" },
@@ -80,8 +87,10 @@ const PROJECTS = [
   },
   {
     title: "KrishiPath",
-    description: "KrishiPath is a responsive agriculture-focused website that helps farmers with weather updates, soil insights, and real-time map tracking. It features an AI-powered RAG chatbot to answer farming queries and provide personalized guidance. The platform bridges traditional farming with modern digital solutions for smarter and sustainable agriculture.",
+    description: "A responsive agriculture platform helping farmers with weather updates, soil insights, and map tracking. Features an AI-powered RAG chatbot for farming queries and personalized guidance.",
     image: "/image.png",
+    github: "https://github.com/Om-Joshi07/Krishipath",
+    liveDemo: null,
     stacks: [
       { name: "HTML", icon: "/html.svg" },
       { name: "CSS", icon: "/css.svg" },
@@ -192,31 +201,47 @@ const Home = () => {
 
           {/* Project Section  */}
 
+          {/* Project Section  */}
+
           <div className="projects-grid" id="projects-grid">
             <section className="projects-section">
-              <div className="projects-text">
-                <h1>Projects</h1>
-                <p>College Projects I built.</p>
+              <div className="projects-header">
+                <h1>Crafted Projects</h1>
+                <p>A showcase of technical projects, applications, and experiments.</p>
               </div>
               <div className="projects-div">
                 {PROJECTS.map((project) => (
                   <div key={project.title} className="card-wrapper">
                     <div className="project-card">
-                      <div className="project-image">
-                        <img src={project.image} alt={project.title} />
+                      <div className="project-image-container">
+                        <img src={project.image} alt={project.title} className="project-image" />
                       </div>
                       <div className="project-text-section">
                         <div className="project-name">
                           <h3>{project.title}</h3>
                           <p>{project.description}</p>
                         </div>
+                        
                         <div className="project-stacks">
                           {project.stacks.map((stack) => (
-                            <div key={stack.name} className="stacks">
-                              <img src={stack.icon} alt={stack.name} />
+                            <div key={stack.name} className="stack-pill">
+                              {stack.icon && <img src={stack.icon} alt={stack.name} className="stack-icon" />}
                               <span>{stack.name}</span>
                             </div>
                           ))}
+                        </div>
+
+                        <div className="project-actions">
+                          {project.github && (
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-btn secondary">
+                              <FiGithub /> <span>Code</span>
+                            </a>
+                          )}
+                          {project.liveDemo && (
+                            <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-btn primary">
+                              <FiExternalLink /> <span>Live Demo</span>
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>
