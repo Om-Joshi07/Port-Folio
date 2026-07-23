@@ -174,32 +174,35 @@ const Home = () => {
           {/* Skill Section  */}
 
           <div className="skills-grid" id="skills-grid">
-            <div className="skills-section" id="skills-grid">
-              <div className="skills-text">
+            <div className="skills-section">
+              <div className="skills-header">
                 <h1>Tech Stacks</h1>
-                <p>I am familiar with:</p>
+                <p>Technologies, frameworks, and tools I work with.</p>
               </div>
 
-              {TECH_STACKS.map((stackGroup) => (
-                <div key={stackGroup.category} className={`${stackGroup.className}-skills`}>
-                  <div className={`${stackGroup.className}-text`}>
-                    <h1>{stackGroup.category}</h1>
-                  </div>
+              <div className="skills-categories-grid">
+                {TECH_STACKS.map((stackGroup) => (
+                  <div key={stackGroup.category} className="skill-category-card">
+                    <div className="category-header">
+                      <h3>{stackGroup.category}</h3>
+                      <div className="category-line"></div>
+                    </div>
 
-                  <div className={`${stackGroup.className}-stacks`}>
-                    {stackGroup.items.map((item) => (
-                      <div key={item.name} className="stacks">
-                        <img src={item.icon} alt={item.name} />
-                        <span>{item.name}</span>
-                      </div>
-                    ))}
+                    <div className="category-stacks">
+                      {stackGroup.items.map((item) => (
+                        <div key={item.name} className="skill-badge">
+                          <div className="skill-icon-wrapper">
+                            <img src={item.icon} alt={item.name} />
+                          </div>
+                          <span>{item.name}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-
-          {/* Project Section  */}
 
           {/* Project Section  */}
 
