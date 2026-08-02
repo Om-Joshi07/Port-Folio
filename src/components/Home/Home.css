@@ -1146,6 +1146,7 @@ main {
   .home-grid .home-section p {
     font-size: 2rem;
     margin-top: 2rem;
+    text-align: center;
   }
 
   .about-grid .about-section {
@@ -1288,6 +1289,7 @@ main {
   .home-grid .home-section p {
     font-size: 2rem;
     margin-top: 1.5rem;
+    text-align: center;
   }
 
   .about-grid .about-section {
@@ -1429,12 +1431,22 @@ main {
   }
 
   .main-container {
-    gap: 1rem;
+    gap: 4rem;
+  }
+
+  .home-grid {
+    min-height: auto;
+    padding-top: 7.5rem;
+  }
+
+  .about-grid {
+    min-height: auto;
+    padding-top: 2rem;
   }
 
   .home-grid .home-section {
     min-height: auto;
-    padding: 3.5rem 1.5rem 2rem;
+    padding: 1.5rem 1.5rem 1rem;
   }
 
   .home-grid .home-section .name-part h5 {
@@ -1619,32 +1631,34 @@ main {
   }
 
   .main-container {
-    gap: 0rem;
+    gap: 4rem;
   }
 
   .home-grid {
-    padding-top: 2rem;
+    padding-top: 7.5rem;
+    min-height: auto;
   }
 
   .about-grid {
-    padding-top: 1rem;
+    padding-top: 2rem;
+    min-height: auto;
   }
 
   .skills-grid {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .projects-grid {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .connect-grid {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .home-grid .home-section {
     min-height: auto;
-    padding: 3rem 1rem 2rem;
+    padding: 1.5rem 1rem 1rem;
   }
 
   .home-grid .home-section .name-part {
@@ -1915,11 +1929,16 @@ main {
   }
 
   .main-container {
-    gap: 12rem;
+    gap: 3.5rem;
   }
 
   .home-grid {
-    padding-top: 11.5rem;
+    padding-top: 7rem;
+    min-height: auto;
+  }
+
+  .about-grid {
+    padding-top: 1.5rem;
     min-height: auto;
   }
 
@@ -2055,11 +2074,11 @@ main {
   }
 
   .main-container {
-    gap: 11rem;
+    gap: 3rem;
   }
 
   .home-grid {
-    padding-top: 11rem;
+    padding-top: 6.5rem;
     min-height: auto;
   }
 
@@ -2195,11 +2214,11 @@ main {
   }
 
   .main-container {
-    gap: 12rem;
+    gap: 3rem;
   }
 
   .home-grid {
-    padding-top: 11.5rem;
+    padding-top: 6.5rem;
     min-height: auto;
   }
 
