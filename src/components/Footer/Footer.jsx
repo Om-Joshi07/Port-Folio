@@ -2,14 +2,18 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer>
+    <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          <div className="text">
-            <p>© 2024 Om Joshi. All rights reserved.</p>
-            <p>Designed by Om Joshi</p>
-          </div>
+          <p className="footer-brand">
+            Om<span>.</span>joshi
+          </p>
+          <p className="footer-copy">
+            &copy; {year} Om Joshi. Crafted with care in Kathmandu.
+          </p>
         </div>
       </div>
     </footer>
