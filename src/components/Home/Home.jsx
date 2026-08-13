@@ -81,10 +81,10 @@ const PROJECTS = [
   {
     title: "Beast Esports",
     description:
-      "An online eSports platform bringing players and fans together — watch live tournaments and scrims while players register for events on the hub.",
+      "An online eSports platform bringing players and fans together, watch live tournaments and scrims while players register for events on the hub.",
     image: "/Beast_Esports.png",
     github: "https://github.com/Om-Joshi07/Beast-Esports",
-    liveDemo: "https://beastesports.com",
+    liveDemo: "https://www.figma.com/design/jUpMklNkrTajS2QyVZdbH3/Untitled?node-id=0-1&t=W67h4WfPEmkZFp3v-1",
     stacks: [
       { name: "HTML", icon: "/html.svg" },
       { name: "CSS", icon: "/css.svg" },
