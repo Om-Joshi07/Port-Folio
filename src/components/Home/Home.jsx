@@ -101,6 +101,7 @@ const PROJECTS = [
       { name: "HTML", icon: "/html.svg" },
       { name: "CSS", icon: "/css.svg" },
       { name: "JavaScript", icon: "/js.svg" },
+      { name: "Django", icon: "/django.svg" },
       { name: "Jinja", icon: "/jinja.svg" },
       { name: "LangChain", icon: "/langchain.svg" },
     ],
